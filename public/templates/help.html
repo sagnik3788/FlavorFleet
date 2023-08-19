@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flavorfleet</title>
+    <link rel="stylesheet" href="/public/styles/Home.css">
+   <link rel="stylesheet" href="/public/styles/help.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="short icon" href="/image/short_icon.png">
+</head>
+<body>
+
+    <section id="Home">
+
+        <nav>
+            <div class="logo">
+                <a href="Home.html"><img src="/image/logo4.png"></a>
+            </div>
+          
+            <ul>
+                <!-- <li><a href="index.html" class="action"></a>Home</a></li> -->
+                <li><a href="search.html"><h3><i class="fa-solid fa-magnifying-glass"></i>Search</h3></a></li>
+                <li><a href="#"><h3><i class="fa-solid fa-tag"></i>Offers</a></h3></li>
+                <li><a href="#"><h3><i class="fa-solid fa-life-ring"></i></i>Help</a><h3></li>
+                <li><h3><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i>Cart</a></h3></li>
+            </ul>
+
+            <div class="login">
+                <h3><a href="login.html">Login</a></h3>
+            </div>
+
+        </nav>
+        
+        <div class="block">
+            <div class="help-headin">
+              <h1>Help & Support</h1>
+              <p>Let's take a step ahead and help you better.</p>
+            </div>
+            <div class="inner-block">
+              <span class="top-block">
+                <button id="button2" onclick="helpShowCustomers()">Customer</button>
+                <button id="button1" onclick="helpShowRestaurents()">Restaurants</button>
+              </span>
+              <div class="left-block">
+                <ul style="list-style-type: none">
+                  <li id="list-item2" onclick="helpShowCustomers()">
+                    Help for Customers
+                  </li>
+                  <li id="list-item1" onclick="helpShowRestaurents()">
+                    Help for Restaurants
+                  </li>
+                </ul>
+              </div>
+              <div class="right-block">
+                <!-- Help for Restaurants -->
+                <div id="help-for-restaurents">
+                  <h1>Help for Restaurants</h1>
+                  <ul style="list-style-type: none">
+                    <div class="help-list-title-container">
+                      <li
+                        class="list-restaurents"
+                        onclick="showContentR(this)"
+                        id="rcontent1"
+                      >
+                        I want to partner my restaurant with Flavorfleet
+                      </li>
+                      <p id="rselector1">&#x25BC;</p>
+                    </div>
+                    <a href="/restaurant/auth" id="rpara1">
+                      Click here to partner with us</a>
+                    <hr />
+                    <div class="help-list-title-container">
+                      <li
+                        class="list-restaurents"
+                        onclick="showContentR(this)"
+                        id="rcontent2"
+                      >
+                        What are the documents needed to list my restaurant on
+                        flavorfleet?
+                      </li>
+                      <p id="rselector2">&#x25BC;</p>
+                    </div>
+                    <ul id="rpara2" style="list-style-type: none">
+                      <li>None, yeah, that's right, none at all</li>
+                      <li>
+                        all you need is a valid email id and you're all set to sell on
+                        flavorfleet
+                      </li>
+                    </ul>
+                    <hr />
+                    <div class="help-list-title-container">
+                      <li
+                        class="list-restaurents"
+                        onclick="showContentR(this)"
+                        id="rcontent3"
+                      >
+                        After I register, how long will it take for my restaurant to
+                        show on flavorfleet?
+                      </li>
+                      <p id="rselector3">&#x25BC;</p>
+                    </div>
+                    <p id="rpara3">
+                      With Just a snap of finger, your restaurant will be live on
+                      flavorfleet! As soon as you upload atleast one dish your restaurant
+                      will start being visible to all our users
+                    </p>
+                    <hr />
+      
+                    <div class="help-list-title-container">
+                      <li
+                        class="list-restaurents"
+                        onclick="showContentR(this)"
+                        id="rcontent4"
+                      >
+                        Who should I contact if I need help & support in getting
+                        onboarded?
+                      </li>
+                      <p id="rselector4">&#x25BC;</p>
+                    </div>
+                    <p id="rpara4">reach out to us on Support@Flavorfleet.in</p>
+                    <hr />
+      
+                    <div class="help-list-title-container">
+                      <li
+                        class="list-restaurents"
+                        onclick="showContentR(this)"
+                        id="rcontent5"
+                      >
+                        How much commission will I be charged by flavorfleet
+                      </li>
+                      <p id="rselector5">&#x25BC;</p>
+                    </div>
+                    <p id="rpara5">
+                      None! flavorfleet does not charge the restaurants anything to use
+                      our platform to grow their business.
+                    </p>
+                    <hr />
+                  </ul>
+                </div>
+      
+                <!-- Help for customer -->
+                <div id="help-for-customer">
+                  <h1>Help for Customers</h1>
+                  <ul style="list-style-type: none">
+                    <div class="help-list-title-container">
+                      <li
+                        class="list-customer"
+                        onclick="showContentC(this)"
+                        id="ccontent1"
+                      >
+                      Is extra discount applicable on item total?
+                      </li>
+                      <p id="cselector1">&#x25BC;</p>
+                    </div>
+                    <p id="cpara1">
+                        Extra discount is applicable on effective item total, which is item total after the coupon discount has been applied
+                    </p>
+                    <hr />
+                    <div class="help-list-title-container">
+                      <li
+                        class="list-customer"
+                        onclick="showContentC(this)"
+                        id="ccontent2"
+                      >
+                      Is Flavorfleet One available in all cities ?
+                      </li>
+                      <p id="cselector2">&#x25BC;</p>
+                    </div>
+                    <p id="cpara2">
+                        Currently Flavorfleet One is available in select cities only.
+                    </p>
+                    <hr />
+                    <div class="help-list-title-container">
+                      <li
+                        class="list-customer"
+                        onclick="showContentC(this)"
+                        id="ccontent3"
+                      >
+                      What is Flavorfleet Customer Care Number?
+                      </li>
+                      <p id="cselector3">&#x25BC;</p>
+                    </div>
+                    <p id="cpara3">
+                        Call us (9233110188)
+                            </p>
+                    <hr />
+      
+                    <div class="help-list-title-container">
+                      <li
+                        class="list-customer"
+                        onclick="showContentC(this)"
+                        id="ccontent4"
+                      >
+                      Do you charge for delivery?
+                      </li>
+                      <p id="cselector4">&#x25BC;</p>
+                    </div>
+                    <p id="cpara4">
+                        Delivery fee varies from city to city and is applicable if order value is below a certain amount. Additionally, certain restaurants might have fixed delivery fees. Delivery fee (if any) is specified on the 'Review Order' page. 
+                    </p>
+                    <hr />
+      
+                    <div class="help-list-title-container">
+                      <li
+                        class="list-customer"
+                        onclick="showContentC(this)"
+                        id="ccontent5"
+                      >
+                      Can I edit my order?
+                      </li>
+                      <p id="cselector5">&#x25BC;</p>
+                    </div>
+                    <p id="cpara5">
+                        In order to edit your order, please click on "Help" and then "I wantto modify items in my order". We will connect you to a support agent who will assist you with the same. Please note that your order can be edited only if the restaurant is yet to confirm your order. Post that, we may not be able to modify your order if food preparation has started.
+                    
+                    </p>
+                    <hr />
+      
+                    <div class="help-list-title-container">
+                      <li
+                        class="list-customer"
+                        onclick="showContentC(this)"
+                        id="ccontent6"
+                      >
+                      I want to cancel my order
+                      </li>
+                      <p id="cselector6">&#x25BC;</p>
+                    </div>
+                    <p id="cpara6">
+                        In order to cancel your order, please click on "Help" and then "I want to cancel my order". Please note that we may charge you a cancellation fee as it helps us to minimise food wastage and also compensate our restaurant partners for cancelled orders.
+                    </p>
+                    <hr />
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+
+    
+
+        <footer>
+
+            <div class="footer_main">
+    
+                <div class="footer_tag">
+    
+                    <h2>Location</h2>
+                    <p>Sri Lanka</p>
+                    <p>USA</p>
+                    <p>India</p>
+                    <p>Japan</p>
+                    <p>Italy</p>
+    
+                </div>
+    
+                <div class="footer_tag">
+    
+                    <h2>Quick Link</h2>
+                    <p>Search</p>
+                    <p>Offers</p>
+                    <p>Help</p>
+                    <p>Cart</p>
+                    
+    
+                </div>
+    
+                <div class="footer_tag">
+    
+                    <h2>Contact</h2>
+                    <p>+91 9233110188</p>
+                    <p>+94 25 5568 456</p>
+                    <p>sagnikdas5432@gmail.com</p>
+                    <p>Flavorfleet123@gmail.com</p>
+    
+                </div>
+    
+                <div class="footer_tag">
+    
+                    <h2>Our Services</h2>
+                    <p>Fast Delivery</p>
+                    <p>Easy Payments</p>
+                    <p>24 x 7 Service</p>
+    
+                </div>
+    
+                <div class="footer_tag">
+    
+                    <h2>Follows</h2>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+    
+                </div>
+    
+            </div>
+    
+            <p class="end">Developed by<span></i>Sagnik</span></p>
+    
+        </footer>
+    <script src="/public/js/help.js"></script>
+    
+    
+        </body>
+        </html>
