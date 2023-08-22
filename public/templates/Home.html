@@ -11,7 +11,7 @@
     <link rel="short icon" href="/image/short_icon.png">
 </head>
 <body>
-
+ 
     <section id="Home">
 
         <nav>
@@ -134,13 +134,13 @@
             <div class="menu_card">
 
                 <div class="menu_img">
-                    <img src="/image/menu_1.jpg">
+                    <img src="/image/menu_1.jpg" >
                 </div>
 
                 <div class="menu_text">
 
-                    <h2>Buger</h2>
-                    <p>
+                    <h2 >Burger</h2>
+                    <p >
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                         Enim, animi nesciunt magni molestiae
                     </p>
@@ -154,9 +154,12 @@
                     </div>
 
                     <p class="price">$100.00<sub><del>$120.00</del></sub></p>
-
-                    <a href="#" class="menu_btn"><i class="fa-solid fa-burger"></i>Order Now</a>
-
+                    <button class="menu_btn" data-food-id="food1" ><i class="fa-solid fa-burger"></i>Order Now</button>
+                    <!-- <a class="menu_btn" href="dish.html?data-food-id=food1">
+                        <i class="fa-solid fa-burger"></i>Order Now
+                    </a> -->
+                    <!-- <a href="#" class="menu_btn"><i class="fa-solid fa-burger"></i>Order Now</a> -->
+                    
                 </div>
 
             </div>
@@ -184,8 +187,8 @@
                     </div>
 
                     <p class="price">$100.00<sub><del>$120.00</del></sub></p>
-
-                    <a href="#" class="menu_btn"><i class="fa-solid fa-burger"></i>Order Now</a>
+                    <button class="menu_btn"data-food-id="food2"><i class="fa-solid fa-burger"></i>Order Now</i></button>
+                    <!-- <a href="#" class="menu_btn"><i class="fa-solid fa-burger"></i>Order Now</a> -->
 
                 </div>
 
@@ -215,7 +218,7 @@
 
                     <p class="price">$100.00<sub><del>$120.00</del></sub></p>
 
-                    <a href="#" class="menu_btn"><i class="fa-solid fa-burger"></i>Order Now</a>
+                    <button class="menu_btn"data-food-id="food3"><i class="fa-solid fa-burger"></i>Order Now</i></button>
 
                 </div>
 
@@ -693,7 +696,6 @@
     </footer>
 
 
-
-    
+<script src="/public/js/dish.js"></script>    
 </body>
 </html>

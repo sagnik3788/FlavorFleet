@@ -2,8 +2,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    /* background-color: #333; */
-    /* color: #fff; */
+    
     padding: 20px 0;
     text-align: center;
 }
@@ -13,14 +12,49 @@ a{
     color: gray;
 }
 
+.result {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: calc(120vh - 180px); 
+}
+
+  
+
+.result-item {
+    width: 170px; 
+    height: 170px; 
+    margin: 10px;
+    border-radius: 50%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden; 
+  }
+  
+ 
+  
+  .meal-image {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; /* Maintain image aspect ratio */
+    position: absolute; /* Add this line */
+    top: 0; /* Add this line */
+    left: 0; /* Add this line */
+    z-index: -1; /* Add this line */
+  }
+  
+
+  
+
 a.exception{
     color:gray;
 }
 
-/* div {
-    display: flex;
-    justify-content: center;
-    } */
+
 
 
     div#hideall {
@@ -46,16 +80,12 @@ div.middle {
 }
 
 
-/* XXX Small screens (320px and up) */
+
 @media only screen and (min-width: 320px) {
 
 .searchsection {
-    /* position: relative;
-    border: 1px solid lightgray;
-    border-radius: 20px;
-    display: flex;
-    width: 300px;
-    flex-direction: column; */
+  
+    flex-direction: column; 
     position:absolute;
     justify-content: center;
     align-items: center;
@@ -66,10 +96,7 @@ div.middle {
     border-radius: 20px;
     z-index: 1;
     left: 550px;
-    /* display: flex;
-    flex-direction: column;
-    z-index: 1;
-    overflow: hidden;  */
+   
 }
 
     .search {
@@ -114,7 +141,7 @@ div.middle {
     }
 
     .searchimg:hover {
-        /* background-color: #edf2fb; */
+        
         background-color:whitesmoke;
     }
 
@@ -193,12 +220,12 @@ div.middle {
    
     }
     
-    /* X Small screens (425px and up) */
+   
     @media only screen and (min-width: 425px) {
        
     }
     
-    /* Small screens (640px and up) */
+    
     @media only screen and (min-width: 640px) {
         .searchbar {
             font-size: 12px;
@@ -222,7 +249,6 @@ div.middle {
        }
     }
     
-    /* Medium screens (768px and up) */
     @media only screen and (min-width: 768px) {
         .searchbar {
             font-size: 14px;
@@ -233,16 +259,15 @@ div.middle {
        }
     }
     
-    /* Large screens (1024px and up) */
+  
     @media only screen and (min-width: 1024px) {
         
     }
     
-    /* X Large screens (1280px and up) */
     @media only screen and (min-width: 1280px) {
     }
     
-    /* XX Large screens (1536px and up) */
+    
     @media only screen and (min-width: 1536px) {
 
         .searchbar {
@@ -253,8 +278,7 @@ div.middle {
           font-size: 16px;
         }
     }
-     
-    /* XXX Large screens (2560px and up) */
+    
     @media only screen and (min-width: 2560px) {
 
        .list {
@@ -283,7 +307,7 @@ div.middle {
           display: initial;
       }
 
-input[type="search"]::-webkit-search-decoration,
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-results-button,
-input[type="search"]::-webkit-search-results-decoration { display: none; }
+      input[type="search"]::-webkit-search-decoration,
+      input[type="search"]::-webkit-search-cancel-button,
+      input[type="search"]::-webkit-search-results-button,
+      input[type="search"]::-webkit-search-results-decoration { display: none; }
