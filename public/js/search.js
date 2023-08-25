@@ -5,14 +5,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
   searchButton.addEventListener('click', function () {
     const searchTerm = searchInput.value.trim();
-    if (searchTerm !== '') {
+    if (searchTerm !== '') { 
       search(searchTerm);
     }
+    
   });
 
   async function search(query) {
     try {
-      const response = await fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${query}`);
+      const response = await fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${query}`);      
       const data = await response.json();
       const limit = 6;
       const meals = data.meals.slice(0, limit);
@@ -36,9 +37,12 @@ document.addEventListener('DOMContentLoaded', function () {
       //   searchResults.appendChild(resultItem);
       // });
       meals.forEach(meal => {
-        const resultItem = document.createElement('div');
+        const resultItem = document.createElement('a'); 
+        resultItem.setAttribute('data-food-id', meal.idMeal); 
+        resultItem.href = `dish.html?id=${meal.idMeal}`; 
         resultItem.className = 'result-item';
-        
+       
+      
         // Create a separate div for the image
         const imageContainer = document.createElement('div');
         imageContainer.className = 'image-container';
@@ -47,9 +51,8 @@ document.addEventListener('DOMContentLoaded', function () {
         const mealName = document.createElement('p');
         mealName.textContent = meal.strMeal;
         
-        resultItem.appendChild(imageContainer); // Add the image container
-        // resultItem.appendChild(mealName); // Add name of the food if need 
-        
+        resultItem.appendChild(imageContainer);
+        resultItem.appendChild(mealName);
         searchResults.appendChild(resultItem);
       });
 
@@ -77,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
 });
-// Now, when the user types in the search input and presses Enter, the search will be triggered just like clicking the search button.
+
 
 
 
@@ -125,7 +128,7 @@ function hideallfunction(){
 
     document.querySelector('.searchbar').setAttribute("placeholder", "Search...");
 
-    document.getElementById('close-img-js').setAttribute("tabindex", "-1");
+    document.getElementById('close-img-js').setAttribute("tabindex", "-1");
 
     window.setTimeout(hideallfunction2, 500);
 
