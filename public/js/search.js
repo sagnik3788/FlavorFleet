@@ -13,7 +13,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
   async function search(query) {
     try {
-      const response = await fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${query}`);      
+      // const response = await fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${query}`);      
+      const response = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${query}`);
+
       const data = await response.json();
       const limit = 6;
       const meals = data.meals.slice(0, limit);

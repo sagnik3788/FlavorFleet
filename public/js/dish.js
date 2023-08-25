@@ -52,17 +52,20 @@ document.addEventListener('DOMContentLoaded', async function () {
   
     if (foodId) {
       try {
-        const response = await fetch(`/dish/${foodId}`); 
-        const data = await response.json();
-        const dishName = document.createElement('h1');
-        dishName.textContent = data.strMeal; 
-        
-        const dishImage = document.createElement('img');
-        dishImage.src = data.strMealThumb;
-        dishImage.alt = data.strMeal; 
-        
-        // const dishDescription = document.createElement('p');
-        // dishDescription.textContent = `Price: $${data.price}, Ratings: ${data.ratings.join(', ')}`;
+        // const response = await fetch(`/dish/${foodId}`); 
+        // const data = await response.json();
+        const response = await fetch(`http://127.0.0.1:5000/dish/${foodId}`);
+          const data = await response.json();
+       
+          console.log(data); // Check the data in the console
+
+         const dishName = document.createElement('h1');
+         dishName.textContent = data.name; 
+
+const dishImage = document.createElement('img');
+dishImage.src = data.image;
+dishImage.alt = data.name; 
+
         
         dishDetails.appendChild(dishName);
         dishDetails.appendChild(dishImage);
