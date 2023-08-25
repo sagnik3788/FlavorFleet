@@ -116,7 +116,7 @@ closeimg.addEventListener('keyup', enterkeyClose);
 
   
 
-// Hide All function when you click anywhere on the background
+//next
 
 function hideallfunction(){
 
