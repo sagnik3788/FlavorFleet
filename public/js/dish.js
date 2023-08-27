@@ -58,20 +58,41 @@ document.addEventListener('DOMContentLoaded', async function () {
         const response = await fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${foodId}`);
           const data = await response.json();
        
-          console.log(data); // Check the data in the console
+        //   console.log(data);
+          
+         
+        //  const dishName = document.createElement('h1');
+        //  dishName.textContent = data.name; 
 
-         const dishName = document.createElement('h1');
-         dishName.textContent = data.name; 
-
-const dishImage = document.createElement('img');
-dishImage.src = data.image;
-dishImage.alt = data.name; 
+        //     const dishImage = document.createElement('img');
+        //       dishImage.src = data.image;
+        //         dishImage.alt = data.name; 
 
         
-        dishDetails.appendChild(dishName);
-        dishDetails.appendChild(dishImage);
+        // dishDetails.appendChild(dishName);
+        // dishDetails.appendChild(dishImage);
         // dishDetails.appendChild(dishDescription);
-        
+        if (data.meals && data.meals.length > 0) {
+          const meal = data.meals[0];
+          
+          console.log(meal); // Check the meal object in the console
+  
+          const dishName = document.createElement('h1');
+          dishName.textContent = meal.strMeal;
+  
+          const dishImage = document.createElement('img');
+          dishImage.src = meal.strMealThumb;
+          dishImage.alt = meal.strMeal;
+  
+          dishDetails.appendChild(dishName);
+          dishDetails.appendChild(dishImage);
+          
+          
+        } else {
+          console.log('No meal data found');
+        }
+
+
       } catch (error) {
         console.log('An error occurred while fetching data:', error);
       }
