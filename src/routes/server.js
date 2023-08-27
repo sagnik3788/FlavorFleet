@@ -7,7 +7,13 @@ const fetch = require('node-fetch');
 app.use(bodyParser.json());
 app.use(express.static('public'));
 
+
 // Routes
+app.get('/dish', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public/templates/dish.html'));
+});
+
+
 app.get('/dish/:id', async (req, res) => {
     const dishId = req.params.id;
 

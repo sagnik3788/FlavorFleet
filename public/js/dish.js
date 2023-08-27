@@ -54,7 +54,8 @@ document.addEventListener('DOMContentLoaded', async function () {
       try {
         // const response = await fetch(`/dish/${foodId}`); 
         // const data = await response.json();
-        const response = await fetch(`http://127.0.0.1:5000/dish/${foodId}`);
+        // const response = await fetch(`http://127.0.0.1:5000/dish/${foodId}`);
+        const response = await fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${foodId}`);
           const data = await response.json();
        
           console.log(data); // Check the data in the console
