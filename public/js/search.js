@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
   
   const data = await response.json();
   
-  const limit = 6;
+  const limit = 3;
   
   const meals = data.meals.slice(0, limit);
   
@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', function () {
   
   const mealName = document.createElement('p');
   
-  mealName.textContent = meal.strMeal;
+  // mealName.textContent = meal.strMeal;
   
   resultItem.appendChild(imageContainer);
   

@@ -2,20 +2,62 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Flavorfleet</title>
+    <link rel="stylesheet" href="/public/styles/Home.css">
+    <link rel="stylesheet" href="/public/styles/dish.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="short icon" href="image/short_icon.png">
 </head>
 <body>
-<!-- <div class="container">
-    <h2 id="dish-name"></h2>
-    <p id="dish-description"></p>
-    <img id="dish-image" src="" alt="">
-</div> -->
+
+    <section id="Home">
+
+        <nav>
+            <div class="logo">
+                <a href="Home.html"><img src="/image/logo4.png"></a>
+            </div>
+          
+            <ul>
+                <!-- <li><a href="index.html" class="action"></a>Home</a></li> -->
+                <li><a href="search.html"><h3><i class="fa-solid fa-magnifying-glass"></i>Search</h3></a></li>
+                <li><a href="#"><h3><i class="fa-solid fa-tag"></i>Offers</a></h3></li>
+                <li><a href="help.html"><h3><i class="fa-solid fa-life-ring"></i></i>Help</a><h3></li>
+                <li><h3><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i>Cart</a></h3></li>
+            </ul>
+
+            <div class="login">
+                <h3><a href="login.html">Login</a></h3>
+            </div>
+
+        </nav>
+
 <h1>Dish Details</h1>
-<div id="dish-details">
-  
+<!-- name  -->
+<div id="dish-name">
 </div>
-<button id="add-to-cart">Add to Cart</button>
+<!-- image  -->
+
+<div id="dish-image">
+</div>
+
+<div id="rating">
+    <i class="fa-solid fa-star" style="color: #f5d60a;"></i>
+    <i class="fa-solid fa-star" style="color: #f5d60a;"></i>
+    <i class="fa-solid fa-star" style="color: #f5d60a;"></i>
+    <i class="fa-solid fa-star" style="color: #f5d60a;"></i>
+    <i class="fa-solid fa-star" style="color: #f5d60a;"></i>
+</div>
+
+<!-- location -->
+
+<div id="dish-location">
+</div>
+<!-- <h2 id="food">food</h2> -->
+
+    <button id="add-to-cart">Add to Cart</button>
+
 
 <script src="/public/js/dish.js"></script>
 </body>

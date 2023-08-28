@@ -1,0 +1,108 @@
+/* dish.css */
+
+/* Overall container for the dish details */
+#dish-details {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Name of the dish */
+#dish-name {
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 100px; /* Add space for the header */
+}
+
+#dish-name h1 {
+    font-size: 28px;
+    color: #000;
+    font-weight: bold;
+    margin: 0;
+}
+
+#dish-name h1.highlight {
+    color: #facc22;
+}
+
+/* Image of the dish */
+#dish-image {
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 30px; 
+
+    padding-top: 30px;
+    position: relative;
+}
+
+#dish-image img {
+    max-width: 100%;
+    max-height: 300px; /* Set the maximum height you want */
+    height: auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd; /* Add a border */
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+#dish-image img:hover {
+    transform: scale(1.05); /* Add a slight zoom effect on hover */
+}
+
+
+/* Location of the dish */
+#dish-location {
+    text-align: center;
+    margin-bottom: 20px;
+}
+#food{
+    text-align: center;
+    margin-bottom: 100px;
+    font-size: 16px;
+    color: black;
+    margin: 0;
+}
+#dish-location p {
+    font-size: 16px;
+    color: #555;
+    margin: 0;
+}
+
+/* Ratings and Add to Cart */
+/* #ratings {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+
+
+#add-to-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #facc22;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 auto;
+    transition: background-color 0.3s;
+}
+
+
+
+#add-to-cart:hover {
+    background-color: #e0a900;
+}
+#rating{
+    text-align: center;
+    margin-bottom: 10px;
+    padding-top: 20px; 
+    
+}
