@@ -5,7 +5,7 @@ const mongoose=require('mongoose')
 const cors =require("cors")
 
 const app = express();
-const PORT = 4000;
+const PORT = 4001;
 app.use(cors());
 
 app.use(express.json());
@@ -41,21 +41,37 @@ app.post('/register', async (req, res) => {
 
 // Login user
 app.post('/login', async (req, res) => {
-    const user = await User.findOne({ email: req.body.email });
-    if (user == null) {
-        return res.status(400).send('Cannot find user');
-    }
+    const { email, password } = req.body;
+
     try {
-        if (await bcrypt.compare(req.body.password, user.password)) {
-            const token = jwt.sign({ email: user.email }, 'secret_key');
-            res.json({ token });
-        } else {
-            res.status(401).send('Authentication failed');
+        const user = await User.findOne({ email});
+
+        if (!user) {
+            return res.status(401).json({ error: 'Authentication failed' });
         }
-    } catch {
-        res.status(500).send();
+
+        const passwordMatch = await bcrypt.compare(password, user.password);
+
+        if (!passwordMatch) {
+            return res.status(401).json({ error: 'Authentication failed' });
+        }
+
+        // const token = jwt.sign({ email: user.email }, 'secret_key');
+    
+        const token = jwt.sign({
+            userId: user.id,
+            email: user.email,
+        }, 'secret', {
+            expiresIn: '1h',
+        });
+
+        res.status(200).json({ token }); 
+    } catch (error) {
+        console.log('Login error:', error);
+        res.status(500).json({ error: 'An error occurred during login' });
     }
 });
+
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);

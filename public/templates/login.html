@@ -85,11 +85,11 @@
                     </div>
                 </div>
                 <div class="input-box">
-                    <input type="text" class="input-field" placeholder="Email" id="registerEmail" name="email">
+                    <input type="text" class="input-field" placeholder="Username or Email" name="email">
                     <i class="bx bx-envelope"></i>
                 </div>
                 <div class="input-box">
-                    <input type="password" class="input-field" placeholder="Password" id="registerPassword" name="password">
+                    <input type="password" class="input-field" placeholder="Password" name="password">
                     <i class="bx bx-lock-alt"></i>
                 </div>
                 <div class="input-box">
@@ -183,7 +183,7 @@
     console.log('User data:', userData); 
 
     try {
-        const response = await fetch('http://127.0.0.1:4000/register', {
+        const response = await fetch('http://127.0.0.1:4001/register', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -202,7 +202,7 @@
     }
     } catch (error) {
         console.log('Error during registration:', error);
-        console.log('Server response:', message);
+       
     }
 });
 
@@ -212,30 +212,29 @@ loginForm.addEventListener('submit', async (event) => {
     event.preventDefault();
     const formData = new FormData(loginForm);
     const userData = {
-        email: formData.get('email'),
-        password: formData.get('password')
+        email: formData.get('email'), 
+        password: formData.get('password') 
     };
     try {
-        const response = await fetch('http://127.0.0.1:4000/login', {
+        const response = await fetch('http://127.0.0.1:4001/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify(userData)
         });
-        const message = await response.text();
+        console.log('Login response:', response.status);
         if (response.ok) {
-            // localStorage.setItem('token', data.token);
-            // alert('Login successful! Welcome to Flavorfleet.');
-            // window.location.href = 'home.html';
             const data = await response.json();
             localStorage.setItem('token', data.token);
+            alert('Login successful! Welcome to Flavorfleet.');
+            // window.location.href = 'home.html';
              window.location.href = 'http://127.0.0.1:5500/public/templates/home.html';
         } else {
-            alert('Login failed. Please check your credentials and try again.'); 
+            console.log('Login failed:', response.statusText);
         }
     } catch (error) {
-        console.error('Error during login:', error);
+        console.log('Error during login:', error);
     }
 });
 
