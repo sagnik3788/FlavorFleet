@@ -3,10 +3,9 @@ const bodyParser = require('body-parser');
 const app = express();
 const port = 5000;
 const fetch = require('node-fetch');
-
+const path=require('path')
 app.use(bodyParser.json());
 app.use(express.static('public'));
-
 
 // Routes
 app.get('/dish', (req, res) => {
