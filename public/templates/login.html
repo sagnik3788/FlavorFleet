@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <!-- -->  <!-- <link rel="stylesheet" href="boxicons/css/boxicons.min.css"> -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="/public/styles/login.css">
-    <link rel="stylesheet" href="/public/styles/Home.css">
+    <link rel="stylesheet" href="http://localhost:4000/styles/login.css">
+    <link rel="stylesheet" href="http://localhost:4000/styles/Home.css">
     <title>Flavorfleet | Login & Registration</title>
 </head>
 <body>
@@ -18,10 +18,10 @@
         </div>
         <div class="nav-menu" id="navMenu">
             <ul>
-              <li><a href="login.html" class="link active">Search</a></li>
-              <li><a href="login.html" class="link">Offers</a></li>
-              <li><a href="help.html" class="link">Help</a></li>
-              <li><a href="login.html" class="link">Cart</a></li>
+              <li><a href="#" class="link active">Search</a></li>
+              <li><a href="#" class="link">Offers</a></li>
+              <li><a href="#" class="link">Help</a></li>
+              <li><a href="#" class="link">Cart</a></li>
             </ul>
         </div>
         <div class="nav-button">
@@ -61,7 +61,7 @@
                     <label for="login-check"> Remember Me</label>
                 </div>
                 <div class="two">
-                    <label><a href="forgot-password.html">Forgot password?</a></label>
+                    <label><a href="/forgot-password">Forgot password?</a></label>
                 </div>
             </div>
             </form>
@@ -229,8 +229,9 @@ loginForm.addEventListener('submit', async (event) => {
             localStorage.setItem('token', data.token);
             alert('Login successful! Welcome to Flavorfleet.');
             // window.location.href = 'home.html';
-             window.location.href = 'http://127.0.0.1:5500/public/templates/home.html';
+             window.location.href = 'http://127.0.0.1:5500/public/templates/Home.html';
         } else {
+            alert("check your credentials")
             console.log('Login failed:', response.statusText);
         }
     } catch (error) {

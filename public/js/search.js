@@ -76,7 +76,8 @@ document.addEventListener('DOMContentLoaded', function () {
   
   resultItem.setAttribute('data-food-id', meal.idMeal);
   
-  resultItem.href = `dish.html?id=${meal.idMeal}`;
+  resultItem.href = `/templates/dish.html?id=${meal.idMeal}`;
+  // resultItem.href = '/templates/dish?id=' + meal.idMeal;
   
   resultItem.className = 'result-item';
   
