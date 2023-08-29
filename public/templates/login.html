@@ -39,6 +39,7 @@
         <!------------------- login form -------------------------->
 
         <div class="login-container" id="login">
+            <form id="login-form">
             <div class="top">
                 <span>Don't have an account? <a href="#" onclick="register()">Sign Up</a></span>
                 <header>Login</header>
@@ -63,45 +64,50 @@
                     <label><a href="forgot-password.html">Forgot password?</a></label>
                 </div>
             </div>
+            </form>
         </div>
 
         <!------------------- registration form -------------------------->
         <div class="register-container" id="register">
-            <div class="top">
-                <span>Have an account? <a href="#" onclick="login()">Login</a></span>
-                <header>Sign Up</header>
-            </div>
-            <div class="two-forms">
-                <div class="input-box">
-                    <input type="text" class="input-field" placeholder="Firstname">
-                    <i class="bx bx-user"></i>
+            <form id="register-form">
+                <div class="top">
+                    <span>Have an account? <a href="#" onclick="login()">Login</a></span>
+                    <header>Sign Up</header>
+                </div>
+                <div class="two-forms">
+                    <div class="input-box">
+                        <input type="text" class="input-field" placeholder="Firstname" id="firstName" name="firstName">
+                        <i class="bx bx-user"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" class="input-field" placeholder="Lastname" id="lastName" name="lastName">
+                        <i class="bx bx-user"></i>
+                    </div>
                 </div>
                 <div class="input-box">
-                    <input type="text" class="input-field" placeholder="Lastname">
-                    <i class="bx bx-user"></i>
+                    <input type="text" class="input-field" placeholder="Email" id="registerEmail" name="email">
+                    <i class="bx bx-envelope"></i>
                 </div>
-            </div>
-            <div class="input-box">
-                <input type="text" class="input-field" placeholder="Email">
-                <i class="bx bx-envelope"></i>
-            </div>
-            <div class="input-box">
-                <input type="password" class="input-field" placeholder="Password">
-                <i class="bx bx-lock-alt"></i>
-            </div>
-            <div class="input-box">
-                <input type="submit" class="submit" value="Register">
-            </div>
-            <div class="two-col">
-                <div class="one">
-                    <input type="checkbox" id="register-check">
-                    <label for="register-check"> Remember Me</label>
+                <div class="input-box">
+                    <input type="password" class="input-field" placeholder="Password" id="registerPassword" name="password">
+                    <i class="bx bx-lock-alt"></i>
                 </div>
-                <div class="two">
-                    <label><a href="#">Terms & conditions</a></label>
+                <div class="input-box">
+                    <input type="submit" class="submit" value="Register">
                 </div>
-            </div>
+                <div class="two-col">
+                    <div class="one">
+                        <input type="checkbox" id="register-check">
+                        <label for="register-check"> Remember Me</label>
+                    </div>
+                    <div class="two">
+                        <label><a href="#">Terms & conditions</a></label>
+                    </div>
+                </div>
+            </form>
         </div>
+        
+       
     </div>
 </div>   
 
@@ -146,6 +152,96 @@
     }
 
 </script>
+<script>
+    const firstNameInput = document.getElementById('firstName');
+    const lastNameInput = document.getElementById('lastName');
+    const registerEmailInput = document.getElementById('registerEmail');
+    const registerPasswordInput = document.getElementById('registerPassword');
+
+    // Function to clear input fields
+    function clearInputFields() {
+        firstNameInput.value = '';
+        lastNameInput.value = '';
+        registerEmailInput.value = '';
+        registerPasswordInput.value = '';
+    }
+  
+    const loginForm = document.getElementById('login-form');
+    const registerForm = document.getElementById('register-form');
+   
+   // Register user
+   registerForm.addEventListener('submit', async (event) => {
+    event.preventDefault();
+    const formData = new FormData(registerForm);
+    const userData = {
+        // firstName: formData.get('firstName'),
+        // lastName: formData.get('lastName'),
+        email: formData.get('email'), 
+        password: formData.get('password') 
+    };
+
+    console.log('User data:', userData); 
+
+    try {
+        const response = await fetch('http://127.0.0.1:4000/register', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(userData)
+        });
+        const message = await response.text();
+        // const responseData = await response.json();
+        if (response.ok) {
+            alert('Registration successful! You can now log in');
+            clearInputFields();
+        } else {
+        // console.log('Registration failed:',message.error); // Log the error message
+        alert('Registration failed. Please try again.');
+        registerForm.reset();
+    }
+    } catch (error) {
+        console.log('Error during registration:', error);
+        console.log('Server response:', message);
+    }
+});
+
+
+// Login user
+loginForm.addEventListener('submit', async (event) => {
+    event.preventDefault();
+    const formData = new FormData(loginForm);
+    const userData = {
+        email: formData.get('email'),
+        password: formData.get('password')
+    };
+    try {
+        const response = await fetch('http://127.0.0.1:4000/login', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(userData)
+        });
+        const message = await response.text();
+        if (response.ok) {
+            // localStorage.setItem('token', data.token);
+            // alert('Login successful! Welcome to Flavorfleet.');
+            // window.location.href = 'home.html';
+            const data = await response.json();
+            localStorage.setItem('token', data.token);
+             window.location.href = 'http://127.0.0.1:5500/public/templates/home.html';
+        } else {
+            alert('Login failed. Please check your credentials and try again.'); 
+        }
+    } catch (error) {
+        console.error('Error during login:', error);
+    }
+});
+
+</script>
+
+
 
 </body>
 </html>

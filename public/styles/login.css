@@ -106,6 +106,8 @@ body{
     flex-direction: column;
     transition: .5s ease-in-out;
 }
+/* ... (other CSS rules) ... */
+
 .top span{
     color: #fff;
     font-size: small;
