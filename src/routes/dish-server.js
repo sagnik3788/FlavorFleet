@@ -14,12 +14,12 @@ app.get('/dish', (req, res) => {
 
 
 app.get('/dish/:id', async (req, res) => {
-    const dishId = req.params.id;
+    const dishId = req.params.id
 
     try {
         const response = await fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${dishId}`);
         const data = await response.json();
-
+        
         if (data.meals && data.meals.length > 0) {
             const meal = data.meals[0];
             

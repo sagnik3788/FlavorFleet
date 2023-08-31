@@ -216,7 +216,7 @@ loginForm.addEventListener('submit', async (event) => {
         password: formData.get('password') 
     };
     try {
-        const response = await fetch('http://127.0.0.1:4001/login', {
+        const response = await fetch('http://localhost:4001/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -229,7 +229,7 @@ loginForm.addEventListener('submit', async (event) => {
             localStorage.setItem('token', data.token);
             alert('Login successful! Welcome to Flavorfleet.');
             // window.location.href = 'home.html';
-             window.location.href = 'http://127.0.0.1:5500/public/templates/Home.html';
+             window.location.href = '/';
         } else {
             alert("check your credentials")
             console.log('Login failed:', response.statusText);
