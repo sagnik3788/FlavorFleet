@@ -1,35 +1,46 @@
-// Get the cart items container
-const cartItemsContainer = document.querySelector('.cart-items');
+document.addEventListener("DOMContentLoaded", function () {
+    const cartItemsContainer = document.querySelector('.cart-items');
 
-// Get selected item information from localStorage
-const selectedItem = JSON.parse(localStorage.getItem('selectedItem'));
+    // Retrieve cart items from local storage
+    const cartItems = JSON.parse(localStorage.getItem('cart'));
 
-// Update cart display in the UI
-function updateCartDisplay() {
-    // Clear the cart container
-    cartItemsContainer.innerHTML = '';
+    // Update cart display in the UI
+    function updateCartDisplay() {
+        // Clear the cart container
+        cartItemsContainer.innerHTML = '';
 
-    if (selectedItem) {
-        const cartItemElement = document.createElement('div');
-        cartItemElement.classList.add('cart-item');
+        if (cartItems && cartItems.length > 0) {
+            cartItems.forEach(item => {
+                const cartItemElement = document.createElement('div');
+                // cartItemElement.classList.add('cart-item');
 
-        const imageElement = document.createElement('img');
-        imageElement.src = selectedItem.image;
-        imageElement.alt = selectedItem.name;
+                const imageElement = document.createElement('img');
+                imageElement.src = item.image; 
+                imageElement.alt = item.name;
 
-        const nameElement = document.createElement('p');
-        nameElement.textContent = selectedItem.name;
+                const nameElement = document.createElement('h1');
+                nameElement.textContent = item.name;
 
-        const descriptionElement = document.createElement('p');
-        descriptionElement.textContent = selectedItem.description;
+                const descriptionElement = document.createElement('h1');
+                descriptionElement.textContent = item.description;
 
-        cartItemElement.appendChild(imageElement);
-        cartItemElement.appendChild(nameElement);
-        cartItemElement.appendChild(descriptionElement);
+                cartItemElement.appendChild(imageElement);
+                cartItemElement.appendChild(nameElement);
+                cartItemElement.appendChild(descriptionElement);
 
-        cartItemsContainer.appendChild(cartItemElement);
+                cartItemsContainer.appendChild(cartItemElement);
+            });
+        }
+       
     }
-}
 
-// Call the updateCartDisplay function
-updateCartDisplay();
+      
+    function clearCartItems() {
+        localStorage.removeItem('cart');
+    }
+    window.addEventListener('beforeunload', clearCartItems);
+   
+    
+    updateCartDisplay();
+});
+

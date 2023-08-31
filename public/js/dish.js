@@ -63,6 +63,7 @@ document.addEventListener('DOMContentLoaded', async function () {
     const dishname = document.getElementById('dish-name');
     const dishpic = document.getElementById('dish-image');
     const dishlocation = document.getElementById('dish-location');
+    const addToCartButton = document.getElementById("add-to-cart");
     
     const urlParams = new URLSearchParams(window.location.search);
     const foodId = urlParams.get('id');
@@ -91,16 +92,36 @@ document.addEventListener('DOMContentLoaded', async function () {
           dishname.appendChild(dishName);
           dishpic.appendChild(dishImage);
           dishlocation.appendChild(dishLocation)
-          
-        } else {
-          console.log('No meal data found');
-        }
 
 
-      } catch (error) {
-        console.log('An error occurred while fetching data:', error);
-      }
-    }
-  });
+          addToCartButton.addEventListener('click', function () {
+            const selectedItem = {
+                name: dishName.textContent, 
+                image: dishImage.src, 
+                description: dishLocation.textContent 
+            };
+    
+            
+            const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+    
+            
+            cartItems.push(selectedItem);
+    
+            
+            localStorage.setItem('cart', JSON.stringify(cartItems));
+    
+            alert('Item added to cart.');
+        });  
+        } 
+  
+ else {
+console.log('No meal data found');
+}
+} catch (error) {
+console.log('An error occurred while fetching data:', error);
+}
+}
+});
 
+  
   

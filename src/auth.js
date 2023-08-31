@@ -3,6 +3,8 @@ const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const mongoose=require('mongoose')  
 const cors =require("cors")
+const { mongodbUri } = require('../dbconfig');
+
 
 const app = express();
 const PORT = 4001;
@@ -11,7 +13,7 @@ app.use(cors());
 app.use(express.json());
 
 // Connect to MongoDB
-mongoose.connect('mongodb://127.0.0.1:27017/blog', {
+mongoose.connect(mongodbUri, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 }).then(() => {

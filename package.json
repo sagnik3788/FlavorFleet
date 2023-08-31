@@ -11,6 +11,7 @@
   "dependencies": {
     "bcrypt": "^5.1.1",
     "body-parser": "^1.20.2",
+    "cd": "^0.3.3",
     "cors": "^2.8.5",
     "dirname": "^0.1.0",
     "dotenv": "^16.3.1",
@@ -22,6 +23,7 @@
     "mongoose": "^7.4.5",
     "node-fetch": "^2.6.1",
     "nodemon": "^3.0.1",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "src": "^1.1.2"
   }
 }

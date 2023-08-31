@@ -8,8 +8,8 @@
     font-family: 'Poppins', sans-serif;
 }
 body{
-    /* url for the background image  */
-    background: url("/image/food100.jpg");
+    /* food100 */
+    background: url("/image/bg-1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -20,7 +20,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 110vh;
-    background: rgba(39, 39, 39, 0.4);
+    background: rgba(39, 39, 39, 0.7);
 }
 .nav{
     position: fixed;
