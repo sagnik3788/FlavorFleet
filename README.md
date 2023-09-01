@@ -1,5 +1,8 @@
 <h1>Idk<h1>
-## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+<div id="license">
+  <h2>License</h2>
+  <p>This project is licensed under the MIT License - see the <a href="LICENSE">LICENSE</a> file for details.</p>
+</div>
+
 
