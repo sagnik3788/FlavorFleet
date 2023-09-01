@@ -5,6 +5,7 @@ const mongoose=require('mongoose')
 const cors =require("cors")
 const { mongodbUri } = require('../dbconfig');
 
+// console.log(mongodbUri);
 
 const app = express();
 const PORT = 4001;
