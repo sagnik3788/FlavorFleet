@@ -1,6 +1,6 @@
 require('dotenv').config();
 
-const mongodbUri = process.env.MONGODB_URI;
+const mongodbUri = process.env.mongodbUri;
 
 module.exports = {
   mongodbUri
