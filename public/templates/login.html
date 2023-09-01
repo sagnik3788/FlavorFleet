@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <!-- -->  <!-- <link rel="stylesheet" href="boxicons/css/boxicons.min.css"> -->
+   
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="http://localhost:4000/styles/login.css">
     <link rel="stylesheet" href="http://localhost:4000/styles/Home.css">
@@ -19,7 +19,7 @@
         <div class="nav-menu" id="navMenu">
             <ul>
               <li><a href="#" class="link active">Search</a></li>
-              <li><a href="#" class="link">Offers</a></li>
+              <li><a href="#"class="link ">Items</a></li>
               <li><a href="#" class="link">Help</a></li>
               <li><a href="#" class="link">Cart</a></li>
             </ul>
@@ -196,7 +196,8 @@
         if (response.ok) {
             alert('Registration successful! You can now log in');
             clearInputFields();
-        } else {
+        }
+        else {
         // console.log('Registration failed:',message.error); // Log the error message
         alert('Registration failed. Please try again.');
         registerForm.reset();
@@ -231,8 +232,10 @@ loginForm.addEventListener('submit', async (event) => {
             alert('Login successful! Welcome to Flavorfleet.');
             // window.location.href = 'home.html';
              window.location.href = '/';
+             clearInputFields();
         } else {
             alert("check your credentials")
+            clearInputFields();
             console.log('Login failed:', response.statusText);
         }
     } catch (error) {

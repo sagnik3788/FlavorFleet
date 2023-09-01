@@ -22,7 +22,7 @@
             <ul>
                 <!-- <li><a href="index.html" class="action"></a>Home</a></li> -->
                 <li><a href="/search"><h3><i class="fa-solid fa-magnifying-glass"></i>Search</h3></a></li>
-                <li><a href="#"><h3><i class="fa-solid fa-tag"></i>Offers</a></h3></li>
+                <li><a href="https://www.themealdb.com/browse.php?b=m"><h3><i class="fa-solid fa-tag"></i>Items</a></h3></li>
                 <li><a href="/help"><h3><i class="fa-solid fa-life-ring"></i></i>Help</a><h3></li>
                 <li><h3><a href="/cart"><i class="fa-solid fa-cart-shopping"></i>Cart</a></h3></li>
             </ul>
@@ -40,24 +40,23 @@
     
     <section id="Cart">
         <div class="main">
+            <div id="empty-cart-message" class="empty-cart-message">
             <div class="_3Y9ZP">Your cart is empty</div>
             <div class="d7jCU" >You can go to the home page to view more restaurants</div>
             <button class="_3pgCg"><a href="/"style="color: white; text-decoration: none;">SEE RESTAURANTS NEAR YOU</a></button>
-
+            </div>
         </div>
         <div class="cart-items">
-            <!-- Cart items will be added here dynamically -->
-            <!-- <h1></h1>
-            <img src="" alt="">
-            <h3></h3>
-                 -->
-                <img src="" alt="">
-                <div class="cart-item-details">
-                    <h1>Food Name</h1>
-                    <h1>Item Description</h1>
-                </div>
+           
+                 <div class="image-box">
+                    <img src="" alt="" class="image">
+                  </div>
+                  <div class="cart-item-details">
+                    <h1 class="name">Food Name</h1>
+                    <p class="description">Item Description</p>
+                  </div>
    
-            <button id="add-to-cart" data-name="Item Name" data-description="Item Description">Add to Cart</button>
+            <!-- <button id="add-to-cart" data-name="Item Name" data-description="Item Description">Add to Cart</button> -->
         </div>
     </section>
   

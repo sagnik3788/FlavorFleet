@@ -49,25 +49,50 @@ button._3pgCg {
     text-align: center;
 }
 
-#order {
-    display: flex;
-    justify-content: center;
+
+
+/* Add this to your CSS file */
+.cart-item {
+  display: flex;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 10px;
     align-items: center;
-    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .item-image {
+    max-width: 100px;
+    height: auto;
+    margin-right: 20px;
+  }
+  
+  .item-name {
     font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .item-description {
+    font-size: 14px;
+  }
+  
+  .order-button {
+    background-color: #ff5722;
     color: #fff;
-    background-color: #facc22;
+    padding: 10px 20px;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
-    margin: 0 auto;
-    transition: background-color 0.3s;
-}
-
-
-
-#order:hover {
-    background-color: #e0a900;
-}
-
-
+    transition: background-color 0.3s ease;
+  }
+  
+  .order-button:hover {
+    background-color: #e64a19;
+  }
+  
+  .item-price {
+    font-size: 14px;
+    color: #007bff; 
+    margin-top: 5px; 
+  }
+  
