@@ -71,6 +71,7 @@ button._3pgCg {
   .item-name {
     font-size: 18px;
     font-weight: bold;
+    
   }
   
   .item-description {
@@ -84,6 +85,7 @@ button._3pgCg {
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin-left: 10px;
   }
   
   .order-button:hover {
@@ -93,6 +95,6 @@ button._3pgCg {
   .item-price {
     font-size: 14px;
     color: #007bff; 
-    margin-top: 5px; 
+    margin-top: -1px; 
   }
   

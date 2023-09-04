@@ -35,40 +35,10 @@
 
 <!----------------------------- Form box ----------------------------------->    
     <div class="form-box">
-        
-        <!------------------- login form -------------------------->
 
-        <div class="login-container" id="login">
-            <form id="login-form">
-            <div class="top">
-                <span>Don't have an account? <a href="#" onclick="register()">Sign Up</a></span>
-                <header>Login</header>
-            </div>
-            <div class="input-box">
-                <input type="text" class="input-field" placeholder="Username or Email">
-                <i class="bx bx-user"></i>
-            </div>
-            <div class="input-box">
-                <input type="password" class="input-field" placeholder="Password">
-                <i class="bx bx-lock-alt"></i>
-            </div>
-            <div class="input-box">
-                <input type="submit" class="submit" value="Sign In">
-            </div>
-            <div class="two-col">
-                <div class="one">
-                    <input type="checkbox" id="login-check">
-                    <label for="login-check"> Remember Me</label>
-                </div>
-                <div class="two">
-                    <label><a href="/forgot-password">Forgot password?</a></label>
-                </div>
-            </div>
-            </form>
-        </div>
 
         <!------------------- registration form -------------------------->
-        <div class="register-container" id="register">
+        <div class="register-container" id="register"right: -520px; opacity: 0;">
             <form id="register-form">
                 <div class="top">
                     <span>Have an account? <a href="#" onclick="login()">Login</a></span>
@@ -107,8 +77,39 @@
                 </div>
             </form>
         </div>
+        <!-- login-->
         
+        <div class="login-container" id="login">
+            <form id="login-form">
+            <div class="top">
+                <span>Don't have an account? <a href="#" onclick="register()">Sign Up</a></span>
+                <header>Login</header>
+            </div>
+            <div class="input-box">
+                <input type="text" class="input-field" placeholder="Username or Email">
+                <i class="bx bx-user"></i>
+            </div>
+            <div class="input-box">
+                <input type="password" class="input-field" placeholder="Password">
+                <i class="bx bx-lock-alt"></i>
+            </div>
+            <div class="input-box">
+                <a href="/Home" type="submit" class="submit"value="Sign In">Sign In</a>
+                <input type="submit" class="submit" value="Sign In" src="/">
+            </div>
+            <div class="two-col">
+                <div class="one">
+                    <input type="checkbox" id="login-check">
+                    <label for="login-check"> Remember Me</label>
+                </div>
+                <div class="two">
+                    <label><a href="/forgot-password">Forgot password?</a></label>
+                </div>
+            </div>
+            </form>
+        </div>
        
+        <!--  -->
     </div>
 </div>   
 
@@ -135,22 +136,23 @@
     var y = document.getElementById("register");
 
     function login() {
-        x.style.left = "4px";
-        y.style.right = "-520px";
-        a.className += " white-btn";
-        b.className = "btn";
-        x.style.opacity = 1;
-        y.style.opacity = 0;
-    }
+    x.style.left = "4px";
+    y.style.right = "-520px";
+    a.className += " white-btn";
+    b.className = "btn";
+    x.style.opacity = 1;
+    y.style.opacity = 0;
+}
 
-    function register() {
-        x.style.left = "-510px";
-        y.style.right = "5px";
-        a.className = "btn";
-        b.className += " white-btn";
-        x.style.opacity = 0;
-        y.style.opacity = 1;
-    }
+function register() {
+    x.style.left = "-510px";
+    y.style.right = "5px";
+    a.className = "btn";
+    b.className += " white-btn";
+    x.style.opacity = 0;
+    y.style.opacity = 1;
+}
+
 
 </script>
 <script>
@@ -207,45 +209,36 @@
        
     }
 });
+// login
 
-
-// Login user
-loginForm.addEventListener('submit', async (event) => {
-    event.preventDefault();
-    const formData = new FormData(loginForm);
-    const userData = {
-        email: formData.get('email'), 
-        password: formData.get('password') 
-    };
-    try {
-        const response = await fetch('http://localhost:4001/login', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(userData)
-        });
-        console.log('Login response:', response.status);
-        if (response.ok) {
-            const data = await response.json();
-            localStorage.setItem('token', data.token);
+   loginForm.addEventListener('submit', async (event) => {
+       event.preventDefault();
+       const formData = new FormData(loginForm);
+       const userData = {
+           email: formData.get('email'), 
+           password: formData.get('password') 
+       };
+       try {
+           const response = await fetch('http://localhost:4001/login', {
+               method: 'POST',
+               headers: {
+                   'Content-Type': 'application/json'
+               },
+               body: JSON.stringify(userData)
+           });
+           if (response.ok) {
+            // The server should set a session cookie upon successful login.
             alert('Login successful! Welcome to Flavorfleet.');
-            // window.location.href = 'home.html';
-             window.location.href = '/';
-             clearInputFields();
+            // Redirect to the homepage or user dashboard
+            window.location.href = '/';
         } else {
-            alert("check your credentials")
-            clearInputFields();
-            console.log('Login failed:', response.statusText);
+            alert('Login failed. Please check your credentials.');
         }
     } catch (error) {
-        console.log('Error during login:', error);
+        console.error('Error during login:', error);
+        alert('An error occurred during login.');
     }
-});
-
+   });
 </script>
-
-
-
 </body>
 </html>

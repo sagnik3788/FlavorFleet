@@ -10,8 +10,8 @@ app.use(express.static(path.join(__dirname, "public")));
 console.log(publicpath);
 app.use(express.static(publicpath));
 
-app.get("/", (req, res) => {
-  res.sendFile(path.join(publicpath, "templates/Home.html"));  
+app.get("/", (req, res)=>{
+  res.sendFile(path.join(publicpath, "templates/login.html"));  
 });
 
 
@@ -26,8 +26,8 @@ app.get("/search", (req, res) => {
 });
 
 
-app.get("/login", (req, res) => {
-  res.sendFile(path.join(publicpath,  "templates/login.html"));
+app.get("/Home", (req, res) => {
+  res.sendFile(path.join(publicpath,  "templates/Home.html"));
 });
 
 app.get("/forgot-password", (req, res) => {

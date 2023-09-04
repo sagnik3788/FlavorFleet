@@ -40,6 +40,7 @@
                     addButton.classList.add('order-button'); 
                     addButton.dataset.itemId = item.id; 
 
+
                     const priceElement = document.createElement('h3');
                     const randomPrice = getRandomPrice(500, 5000); 
                     priceElement.textContent = `(Only ₹${randomPrice})`; 
@@ -49,8 +50,7 @@
                     cartItemElement.appendChild(nameElement);
                     cartItemElement.appendChild(priceElement);
                     cartItemElement.appendChild(addButton);
-                    
-
+            
 
                     cartItemsContainer.appendChild(cartItemElement);
                 });
