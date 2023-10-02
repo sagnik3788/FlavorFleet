@@ -30,19 +30,19 @@
 <p align="center">
     <img src="./public/image/src-main.jpg" alt="Dashboard"/>
 </p>
-## Table Of Contents
+## Table Of Contents  📚 
 
-- [Introduction](#introduction)
-- [Features](#features)
-- [Development](#development)
-  - [Pre-requisites](#pre-requisites)
-  - [Running Flavorfleet](#running-flavorfleet)
-- [Tech Stack](#tech-stack)
-- [Contributing](#contributing)
-  - [How to Contribute](#how-to-contribute)
-- [Mentors](#mentors)
-- [Contributors](#contributors)
-- [License](#license)
+- [Introduction](##introduction)
+- [Features](##features)
+- [Development](##development)
+  - [Pre-requisites](##pre-requisites)
+  - [Running Flavorfleet](##running-flavorfleet)
+- [Tech Stack](##tech-stack)
+- [Contributing](##contributing)
+  - [How to Contribute](##how-to-contribute)
+- [Mentors](##mentors)
+- [Contributors](##contributors)
+- [License](##license)
 
 ## Introduction <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Rocket.png" alt="Rocket"  width="50" height="50" style="vertical-align: middle;"/>
 
