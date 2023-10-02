@@ -159,7 +159,7 @@ We appreciate your contributions and look forward to working together to improve
 </div>
 
 
-## Contributers  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Red%20Heart.png" alt="Red Heart"  width="50" height="50" style="vertical-align: middle;" />
+## Contributors  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Red%20Heart.png" alt="Red Heart"  width="50" height="50" style="vertical-align: middle;" />
 
 - This project thanking all the contributors for having your valuable contribution to our project
 - Make sure you show some love by giving ⭐ to our repository
