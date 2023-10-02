@@ -149,6 +149,7 @@ We appreciate your contributions and look forward to working together to improve
 
 <div align="center">
     <img src="./public/image/slop%203.0.png" alt="SLOP 3.0">
+    
 | Sagnik Das
 | -----------------------------------------------------------------------------------------------------
 | ![Mentor 1](./public/image/sagnik.png) 
