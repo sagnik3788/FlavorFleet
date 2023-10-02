@@ -148,15 +148,8 @@ We appreciate your contributions and look forward to working together to improve
 ## Mentors <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People%20with%20professions/Man%20Teacher%20Light%20Skin%20Tone.png" alt="Robot"  width="50" height="50" style="vertical-align: middle;" />
 
 <div align="center">
-<div style="display: flex; justify-content: center;">
-  <div style="display: inline-block;">
     <img src="./public/image/gdsc.png" alt="gdsc DA-IICT">
-  </div>
-  <div style="display: inline-block;">
     <img src="./public/image/slop%203.0.png" alt="SLOP 3.0">
-  </div>
-</div>
-
 | Sagnik Das
 | -----------------------------------------------------------------------------------------------------
 | ![Mentor 1](./public/image/sagnik.png) 
