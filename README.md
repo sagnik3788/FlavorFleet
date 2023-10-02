@@ -38,7 +38,7 @@
   - [Pre-requisites](https://github.com/sagnik3788/FlavorFleet/blob/main/README.md#development-)
   - [Running Flavorfleet](https://github.com/sagnik3788/FlavorFleet/blob/main/README.md#development-)
 - [Tech Stack](https://github.com/sagnik3788/FlavorFleet/blob/main/README.md#tech-stack-)
-- [Contributing](##contributing)
+- [Contributing](https://github.com/sagnik3788/FlavorFleet/blob/main/README.md#contributing-)
   - [How to Contribute](https://github.com/sagnik3788/FlavorFleet/blob/main/README.md#how-to-contribute-)
 - [Mentors](https://github.com/sagnik3788/FlavorFleet/blob/main/README.md#mentors-)
 - [Contributors](https://github.com/sagnik3788/FlavorFleet/blob/main/README.md#contributors--)
