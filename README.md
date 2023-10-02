@@ -8,30 +8,31 @@
 </p>
 
 <h4 align="center">
-  <a href="https://github.com/sagnik3788/FlavorFleet/graphs/contributors">
-    <img src="https://img.shields.io/github/contributors-anon/sagnik3788/FlavorFleet?color=yellow&style=flat-square" alt="contributers">
-  </a>
-  <a href="https://opensource.org/licenses/MIT">
-    <img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square" alt="license">
-  </a>
-  <br>
-  <a href="https://.com/discord">
-    <img src="https://img.shields.io/badge/discord-7289da.svg?style=flat-square" alt="discord">
-  </a>
-  <a href="https://twitter.com/SagnikD80478508">
-    <img src="https://img.shields.io/badge/twitter-18a1d6.svg?style=flat-square" alt="twitter">
-  </a>
-  <a href="https://www.youtube.com">
-    <img src="https://img.shields.io/badge/youtube-d95652.svg?style=flat-square&" alt="youtube">
-  </a>
+    <a href="https://github.com/sagnik3788/FlavorFleet/graphs/contributors" style="margin-right: 10px;">
+        <img src="https://img.shields.io/github/contributors-anon/sagnik3788/FlavorFleet?color=yellow&style=flat-square" alt="contributers">
+    </a>
+    <a href="https://opensource.org/licenses/MIT" style="margin-right: 10px;">
+        <img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square" alt="license">
+    </a>
+    <br>
+    <a href="https://.com/discord" style="margin-right: 10px;">
+        <img src="https://img.shields.io/badge/discord-7289da.svg?style=flat-square" alt="discord">
+    </a>
+    <a href="https://twitter.com/SagnikD80478508" style="margin-right: 10px;">
+        <img src="https://img.shields.io/badge/twitter-18a1d6.svg?style=flat-square" alt="twitter">
+    </a>
+    <a href="https://www.youtube.com" style="margin-right: 10px;">
+        <img src="https://img.shields.io/badge/youtube-d95652.svg?style=flat-square&" alt="youtube">
+    </a>
 </h4>
+
 
 <p align="center">
     <img src="./public/image/src-main.jpg" alt="Dashboard"/>
 </p>
 
 
-## Introduction
+## Introduction <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Rocket.png" alt="Rocket" width="40" height="40" />
 
 `Flavorfleet` is an innovative and open-source culinary platform designed to redefine the way we explore, create, and enjoy food experiences. Our mission is to inspire food enthusiasts, from home cooks to professional chefs, by providing a wealth of resources and tools to elevate their culinary journeys.
 
@@ -110,7 +111,7 @@ npm run start
 The development environment should now be set up. Additional information on the different application component can be found under README.md file. Happy hacking! 👾
 </details>
 
-## Tech Stack <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/High%20Voltage.png" alt="High Voltage" width="40" height="40" />
+## Tech Stack <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/High%20Voltage.png" alt="High Voltage" width="50" height="50" style="vertical-align: middle; />
 
 - **Frontend:** HTML, CSS, JavaScript
 - **Backend:** Node.js, Express.js
