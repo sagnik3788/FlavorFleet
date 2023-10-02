@@ -30,7 +30,7 @@
 <p align="center">
     <img src="./public/image/src-main.jpg" alt="Dashboard"/>
 </p>
-## Table Of Contents  📚 
+##  Table Of Contents 📚 
 
 - [Introduction](##introduction)
 - [Features](##features)
