@@ -30,7 +30,8 @@
 <p align="center">
     <img src="./public/image/src-main.jpg" alt="Dashboard"/>
 </p>
-##  Table Of Contents 📚 
+
+## Table Of Contents 📚 
 
 - [Introduction](https://github.com/sagnik3788/FlavorFleet/blob/main/README.md#introduction-)
 - [Features](https://github.com/sagnik3788/FlavorFleet/blob/main/README.md#introduction-)
