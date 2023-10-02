@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Activities/Video%20Game.png" alt="Video Game" width="50" height="50" /><font size="10"> FlavorFleet</font></h1>
+    <img src="./public/image/Bacon.png" alt="bacon" width="50" height="50"> <font size="10"> FlavorFleet</font></h1>
 </h1>
 
 <p align="center">
@@ -109,7 +109,7 @@ npm run start
 The development environment should now be set up. Additional information on the different application component can be found under README.md file. Happy hacking! 👾
 </details>
 
-## Tech Stack
+## Tech Stack <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/High%20Voltage.png" alt="High Voltage" width="40" height="40" />
 
 - **Frontend:** HTML, CSS, JavaScript
 - **Backend:** Node.js, Express.js
@@ -142,9 +142,24 @@ FlavorFleet is an open-source project, and we welcome contributions from the com
 
 We appreciate your contributions and look forward to working together to improve FlavorFleet.
 
+## Mentors
+
+<div align="center">
+
+![SLOP 3.0](./public/image/slop%203.0.png)
+
+| Sagnik Das
+| -----------------------------------------------------------------------------------------------------
+| ![Mentor 1](./public/image/sagnik.png) 
+| [LinkedIn](https://www.linkedin.com/in/sagnik-das-b550ab224/) \| [GitHub](https://github.com/sagnik3788) 
+
+</div>
+
 
 ## Contributers
 
+- This project thanking all the contributors for having your valuable contribution to our project
+- Make sure you show some love by giving ⭐ to our repository
 
 [//]: contributor-faces
 <a href="https://github.com/sagnik3788"><img src="./public/image/sagnik.png" alt="goingdust" title="goingdust" width="50" height="50"></a>
@@ -153,5 +168,7 @@ We appreciate your contributions and look forward to working together to improve
 
 ## License
 
-A large part of this project is licensed under the [Apache 2.0](./LICENSE) license. The only expection are the components under the `ee` (enterprise edition) directory, these are licensed under the [Amplication Enterprise Edition](./ee/LICENSE) license.
+This project is licensed under the MIT License - see the [LICENSE](./LICENCE) file for details. Please note that the components under the `ee` (enterprise edition) directory are also licensed under the MIT License.
+
+
 
