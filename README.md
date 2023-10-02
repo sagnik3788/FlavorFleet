@@ -32,17 +32,17 @@
 </p>
 ##  Table Of Contents 📚 
 
-- [Introduction](##introduction)
-- [Features](##features)
-- [Development](##development)
-  - [Pre-requisites](##pre-requisites)
-  - [Running Flavorfleet](##running-flavorfleet)
-- [Tech Stack](##tech-stack)
+- [Introduction](https://github.com/sagnik3788/FlavorFleet/blob/main/README.md#introduction-)
+- [Features](https://github.com/sagnik3788/FlavorFleet/blob/main/README.md#introduction-)
+- [Development](https://github.com/sagnik3788/FlavorFleet/blob/main/README.md#development-)
+  - [Pre-requisites](https://github.com/sagnik3788/FlavorFleet/blob/main/README.md#development-)
+  - [Running Flavorfleet](https://github.com/sagnik3788/FlavorFleet/blob/main/README.md#development-)
+- [Tech Stack](https://github.com/sagnik3788/FlavorFleet/blob/main/README.md#tech-stack-)
 - [Contributing](##contributing)
-  - [How to Contribute](##how-to-contribute)
-- [Mentors](##mentors)
-- [Contributors](##contributors)
-- [License](##license)
+  - [How to Contribute](https://github.com/sagnik3788/FlavorFleet/blob/main/README.md#how-to-contribute-)
+- [Mentors](https://github.com/sagnik3788/FlavorFleet/blob/main/README.md#mentors-)
+- [Contributors](https://github.com/sagnik3788/FlavorFleet/blob/main/README.md#contributors--)
+- [License](https://github.com/sagnik3788/FlavorFleet/blob/main/README.md#license)
 
 ## Introduction <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Rocket.png" alt="Rocket"  width="50" height="50" style="vertical-align: middle;"/>
 
