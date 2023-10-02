@@ -157,7 +157,7 @@ We appreciate your contributions and look forward to working together to improve
         </tr>
         <tr>
             <td>
-               <img src="./public/image/sagnik.png" alt="Mentor 1" width="50" height="50"> 
+               <img src="./public/image/sagnik.png" alt="Mentor 1" width="100" height="50"> 
             </td>
         </tr>
         <tr>
