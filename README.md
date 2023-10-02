@@ -32,7 +32,7 @@
 </p>
 
 
-## Introduction <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Rocket.png" alt="Rocket" width="40" height="40" />
+## Introduction <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Rocket.png" alt="Rocket"  width="50" height="50" style="vertical-align: middle;"/>
 
 `Flavorfleet` is an innovative and open-source culinary platform designed to redefine the way we explore, create, and enjoy food experiences. Our mission is to inspire food enthusiasts, from home cooks to professional chefs, by providing a wealth of resources and tools to elevate their culinary journeys.
 
