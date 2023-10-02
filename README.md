@@ -147,6 +147,7 @@ FlavorFleet is an open-source project, and we welcome contributions from the com
 
 2. **Get Assigned:** Once you've created an issue, a project maintainer will review it, assign it to you if necessary, and provide guidance or clarifications.
 
+
 3. **Work on Your Contribution:** Fork the repository, create a new branch, and start working on your contribution.
 
 4. **Create a Pull Request (PR):** When you're ready, submit a [pull request](https://github.com/sagnik3788/FlavorFleet/pulls) from your branch to the main repository. Ensure your PR includes a clear description of your changes.
