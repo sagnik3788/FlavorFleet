@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img src="./public/image/Bacon.png" alt="bacon" width="50" height="50"> <font size="10"> FlavorFleet</font></h1>
+    <img src="./public/image/Candy.png" alt="bacon" width="50" height="50"> <font size="10"> FlavorFleet</font></h1>
 </h1>
 
 <p align="center">
