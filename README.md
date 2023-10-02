@@ -149,13 +149,25 @@ We appreciate your contributions and look forward to working together to improve
 
 <div align="center">
     <img src="./public/image/slop%203.0.png" alt="SLOP 3.0">
-    
-| Sagnik Das
-| -----------------------------------------------------------------------------------------------------
-| ![Mentor 1](./public/image/sagnik.png) 
-| [LinkedIn](https://www.linkedin.com/in/sagnik-das-b550ab224/) \| [GitHub](https://github.com/sagnik3788) 
-
 </div>
+<div align="center">
+    <table>
+        <tr>
+            <td>Sagnik Das</td>
+        </tr>
+        <tr>
+            <td>
+                <img src="./public/image/sagnik.png" alt="Mentor 1">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://www.linkedin.com/in/sagnik-das-b550ab224/">LinkedIn</a> | <a href="https://github.com/sagnik3788">GitHub</a>
+            </td>
+        </tr>
+    </table>
+</div>
+
 
 
 ## Contributors  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Red%20Heart.png" alt="Red Heart"  width="50" height="50" style="vertical-align: middle;" />
