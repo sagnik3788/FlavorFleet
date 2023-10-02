@@ -1,7 +1,5 @@
 <h1 align="center">
-    <a href="https://github.com/sagnik3788/FlavorFleet">
-    <img src="./.github/assets/amplication-logo-light-mode.svg">
-    </a>
+    <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Activities/Video%20Game.png" alt="Video Game" width="50" height="50" /><font size="10"> FlavorFleet</font></h1>
 </h1>
 
 <p align="center">
@@ -48,36 +46,23 @@ Embark on a culinary journey like never before with Flavoorfleet, your ultimate 
 </summary> <br />
 
 <p align="center">
-    <img width="49%" src="https://github.com/amplication/amplication/assets/73097785/9908a54a-7d49-4dbb-8f5e-3e99b7cadf30.png" alt="apis"/>
+    <img width="49%" src="./public/image/sign-up demo.jpg" alt="apis"/>
 &nbsp;
-    <img width="49%" src="https://github.com/amplication/amplication/assets/73097785/ff406403-27f7-42b5-9569-d011432f16e5.png" alt="data-models"/>
+    <img width="49%" src="./public/image/help demo.jpg" alt="data-models"/>
 </p>
 
 <p align="center">
-    <img width="49%" src="https://github.com/amplication/amplication/assets/73097785/62c8d533-8475-4290-abc8-c433c095e68a.png" alt="plugins"/>
+    <img width="49%" src="./public/image/chef demo.jpg" alt="plugins"/>
 &nbsp;
-    <img width="49%" src="https://github.com/amplication/amplication/assets/73097785/9c67a354-a06f-47d1-a118-ab89b775bf91.png" alt="microservices"/>
+    <img width="49%" src="./public/image/items demo.png" alt="microservices"/>
 </p> 
     
 <p align="center">
-    <img width="49%" src="https://github.com/amplication/amplication/assets/73097785/a51e166b-07ec-4c80-99ed-8792a81c4064.png" alt="own-your-code"/>
+    <img width="49%" src="./public/image/cart.png" alt="own-your-code"/>
 &nbsp;
-    <img width="49%" src="https://github.com/amplication/amplication/assets/73097785/1cca9721-b8d6-425b-a1a9-d10d3cdcc9b8.png" alt="customize-code"/>
+    <img width="49%" src="./public/image/DB.png" alt="customize-code"/>
 </p>
     
-</details>
-
-## Usage 
-
-To get started with Amplication, the hosted version of the product can be used. You can get started immediately at [app.amplication.com](https://app.amplication.com). After the login page you will be guided through creating your first service. The [website](https://amplication.com) provides an overview of the application, additional information on the product and guides can be found on the [docs](https://docs.amplication.com).
-
-<details>
-<summary>
-  Tutorials
-</summary> <br />
-
-- [To-do application using Amplication and Angular](https://docs.amplication.com/tutorials/angular-todos)
-- [To-do application using Amplication and React](https://docs.amplication.com/tutorials/react-todos)
 </details>
 
 ## Development
@@ -88,114 +73,81 @@ Alternatively to using the hosted version of the product, Amplication can be ran
 <summary>
 Pre-requisites
 </summary> <br />
-To be able to start development on amplication make sure that you have the following pre-requisites installed:
+To be able to start development  make sure that you have the following pre-requisites installed:
 
 ###
 
 - Node.js
-- Docker
 - Git
 </details>
 
 <details open>
 <summary>
-Running Amplication
+Running Flavorfleet
 </summary> <br />
-
-> **Note**
-> It is also possible to start development with GitHub Codespaces, when navigating to `< > Code`, select `Codespaces` instead of `Local`. Click on either the `+`-sign or the `Create codespace on master`-button.
-
-Amplication is using a monorepo architecture - powered by <a href="https://nx.dev">Nx Workspaces</a> - where multiple application and libraries exist in a single repository. To setup a local development environment the following steps can be followed:
 
 ###
 
-1. Clone the repository and install dependencies:
+1. Clone the repository :
 ```shell
-git clone https://github.com/amplication/amplication.git && cd amplication && npm install
+git clone https://github.com/sagnik3788/FlavorFleet.git  
 ```
 
-2. Run the setup script, which takes care of installing dependencies, building packages and setting up the workspace:
+2. Install Dependencies:
 ```shell
-npm run setup:dev
+cd FlavorFleet
+npm install
 ```
 
-3. Option 1: Running the required infrastructure - view infrastructure component logs
+2. Install Dependencies:
+```shell
+npm run start
 
 
-```shell
-npm run docker:dev
-```
-3. Option 2: Running the required infrastructure - run the infrastructure components in background
-```shell
-npm run docker:dev -- -d
 ```
 
-4. Apply database migrations
-```shell
-npm run db:migrate:deploy
-```
-
-5. To start developing, run one or more of the applications available under `serve:[application]` scripts of the package.json.
-
-```shell
-# running the server component
-npm run serve:server
-
-# running the client component
-npm run serve:client
-
-# running the data-service-generator component
-npm run serve:dsg
-
-# running the git-pull-request-service component
-npm run serve:git
-
-# running the plugin-api component
-npm run serve:plugins
-```
-
-> **Note**
-> In order to run the Amplication client properly, both the client and server need to be started by the `npm run serve:[application]` command, aswell as additional component for development on a specific component.
-
-The development environment should now be set up. Additional information on the different application component can be found under packages/`[application]`/README.md file. Happy hacking! 👾
+The development environment should now be set up. Additional information on the different application component can be found under README.md file. Happy hacking! 👾
 </details>
 
-## Resources
+## Tech Stack
 
-- **[Website](https://amplication.com)** overview of the product.
-- **[Docs](https://docs.amplication.com)** for comprehensive documentation.
-- **[Blog](https://amplication.com/blog)** for guides and techinical comparisons.
-- **[Roadmap](https://amplication.com/#roadmap)** to see what features will be added in the future.
-- **[Discord](https://amplication.com/discord)** for support and discussions with the community and the team.
-- **[GitHub](https://github.com/amplication/amplication)** for source code, project board, issues, and pull requests.
-- **[Twitter](https://twitter.com/amplication)** for the latest updates on the product and published blogs.
-- **[YouTube](https://www.youtube.com/c/Amplicationcom)** for guides and technical talks.
+- **Frontend:** HTML, CSS, JavaScript
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB
+- **Authentication:** JWT (JSON Web Tokens)
+- **Middleware:** body-parser
+- **ODM (Object Data Modeling):** Mongoose
+- **Development Tools:** nodemon, Postman
+- **Environment Variables:** dotenv
+
 
 <a name="contributing_anchor"></a>
 ## Contributing
 
-Amplication is an open-source project. We are committed to a fully transparent development process and highly appreciate any contributions. Whether you are helping us fix bugs, proposing new features, improving our documentation or spreading the word - we would love to have you as a part of the Amplication community. Please refer to our [contribution guidelines](./CONTRIBUTING.md) and [code of conduct](./CODE_OF_CONDUCT.md).
+FlavorFleet is an open-source project, and we welcome contributions from the community. Whether you're interested in fixing bugs, adding new features, improving documentation, or any other form of contribution, we appreciate your involvement.
 
-- Bug Report: If you see an error message or run into an issue while using Amplication, please create a [bug report](https://github.com/amplication/amplication/issues/new?assignees=&labels=type%3A+bug&template=bug.yaml&title=%F0%9F%90%9B+Bug+Report%3A+).
+### How to Contribute
 
-- Feature Request: If you have an idea or you're missing a capability that would make development easier and more robust, please submit a [feature request](https://github.com/amplication/amplication/issues/new?assignees=&labels=type%3A+feature+request&template=feature.yml).
+1. **Create an Issue:** If you find a bug, have a feature request, or want to work on an improvement, please create an [issue](https://github.com/sagnik3788/FlavorFleet/issues) describing the issue or your proposed change.
 
-- Documentation Request: If you're reading the Amplication docs and feel like the you're missing something, please submit a [documentation request](https://github.com/amplication/amplication/issues/new?assignees=&labels=type%3A+docs&template=documentation-request.yaml&title=%F0%9F%93%96+Documentation%3A+).
+2. **Get Assigned:** Once you've created an issue, a project maintainer will review it, assign it to you if necessary, and provide guidance or clarifications.
 
-Not sure where to start? Join our discord and we will help you get started!
+3. **Work on Your Contribution:** Fork the repository, create a new branch, and start working on your contribution.
 
-<a href="https://amplication.com/discord"><img src="https://amplication.com/images/discord_banner_purple.svg" /></a>
+4. **Create a Pull Request (PR):** When you're ready, submit a [pull request](https://github.com/sagnik3788/FlavorFleet/pulls) from your branch to the main repository. Ensure your PR includes a clear description of your changes.
+
+5. **Collaborate and Review:** Collaborate with maintainers and other contributors during the review process. Make any necessary updates based on feedback.
+
+6. **Merge:** Once your PR is approved, it will be merged into the main repository.
+
+We appreciate your contributions and look forward to working together to improve FlavorFleet.
+
 
 ## Contributers
 
-<!---
-npx contributer-faces --exclude "*bot*" --limit 70 --repo "https://github.com/amplication/amplication"
-
-change the height and width for each of the contributors from 80 to 50.
---->
 
 [//]: contributor-faces
-<a href="https://github.com/goingdust"><img src="https://avatars.githubusercontent.com/u/87334449?v=4" title="goingdust" width="50" height="50"></a>
+<a href="https://github.com/sagnik3788"><img src="./public/image/sagnik.png" alt="goingdust" title="goingdust" width="50" height="50"></a>
 
 [//]: contributor-faces
 
