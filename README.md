@@ -30,7 +30,19 @@
 <p align="center">
     <img src="./public/image/src-main.jpg" alt="Dashboard"/>
 </p>
+##  Table Of Contents 📚 
 
+- [Introduction](https://github.com/sagnik3788/FlavorFleet/blob/main/README.md#introduction-)
+- [Features](https://github.com/sagnik3788/FlavorFleet/blob/main/README.md#introduction-)
+- [Development](https://github.com/sagnik3788/FlavorFleet/blob/main/README.md#development-)
+  - [Pre-requisites](https://github.com/sagnik3788/FlavorFleet/blob/main/README.md#development-)
+  - [Running Flavorfleet](https://github.com/sagnik3788/FlavorFleet/blob/main/README.md#development-)
+- [Tech Stack](https://github.com/sagnik3788/FlavorFleet/blob/main/README.md#tech-stack-)
+- [Contributing](https://github.com/sagnik3788/FlavorFleet/blob/main/README.md#contributing-)
+  - [How to Contribute](https://github.com/sagnik3788/FlavorFleet/blob/main/README.md#how-to-contribute-)
+- [Mentors](https://github.com/sagnik3788/FlavorFleet/blob/main/README.md#mentors-)
+- [Contributors](https://github.com/sagnik3788/FlavorFleet/blob/main/README.md#contributors--)
+- [License](https://github.com/sagnik3788/FlavorFleet/blob/main/README.md#license)
 
 ## Introduction <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Rocket.png" alt="Rocket"  width="50" height="50" style="vertical-align: middle;"/>
 
