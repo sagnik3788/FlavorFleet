@@ -149,7 +149,12 @@ We appreciate your contributions and look forward to working together to improve
 
 <div align="center">
 
-![SLOP 3.0](./public/image/slop%203.0.png)
+<div style="display: inline-block;">
+    <img src="./public/image/gdsc.png" alt="gdsc DA-IICT">
+  </div>
+  <div style="display: inline-block;">
+    <img src="./public/image/slop%203.0.png" alt="SLOP 3.0">
+  </div>
 
 | Sagnik Das
 | -----------------------------------------------------------------------------------------------------
