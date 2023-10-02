@@ -1,5 +1,6 @@
 <h1 align="center">
-    <img src="./public/image/Candy.png" alt="bacon" width="50" height="50"> <font size="10"> FlavorFleet</font></h1>
+    <img src="./public/image/Candy.png" alt="candy" width="50" height="50" style="vertical-align: middle;">
+    <font size="10">FlavorFleet</font>
 </h1>
 
 <p align="center">
