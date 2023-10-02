@@ -67,7 +67,7 @@ Embark on a culinary journey like never before with Flavoorfleet, your ultimate 
     
 </details>
 
-## Development
+## Development <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot"  width="50" height="50" style="vertical-align: middle;"/>
 
 Alternatively to using the hosted version of the product, Amplication can be ran local for code generation purposes or contributions - if so please refer to our [contributing](#contributing_anchor) section.
 
@@ -111,7 +111,7 @@ npm run start
 The development environment should now be set up. Additional information on the different application component can be found under README.md file. Happy hacking! 👾
 </details>
 
-## Tech Stack <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/High%20Voltage.png" alt="High Voltage" width="50" height="50" style="vertical-align: middle; />
+## Tech Stack <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/High%20Voltage.png" alt="High Voltage" width="50" height="50" style="vertical-align: middle;" />
 
 - **Frontend:** HTML, CSS, JavaScript
 - **Backend:** Node.js, Express.js
@@ -124,11 +124,12 @@ The development environment should now be set up. Additional information on the 
 
 
 <a name="contributing_anchor"></a>
-## Contributing
+
+## Contributing <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Handshake.png" alt="Handshake"  width="50" height="50" style="vertical-align: middle;" /> 
 
 FlavorFleet is an open-source project, and we welcome contributions from the community. Whether you're interested in fixing bugs, adding new features, improving documentation, or any other form of contribution, we appreciate your involvement.
 
-### How to Contribute
+## How to Contribute <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Page%20with%20Curl.png" alt="Page with Curl"  width="50" height="50" style="vertical-align: middle;" />
 
 1. **Create an Issue:** If you find a bug, have a feature request, or want to work on an improvement, please create an [issue](https://github.com/sagnik3788/FlavorFleet/issues) describing the issue or your proposed change.
 
@@ -144,7 +145,7 @@ FlavorFleet is an open-source project, and we welcome contributions from the com
 
 We appreciate your contributions and look forward to working together to improve FlavorFleet.
 
-## Mentors
+## Mentors <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People%20with%20professions/Man%20Teacher%20Light%20Skin%20Tone.png" alt="Robot"  width="50" height="50" style="vertical-align: middle;" />
 
 <div align="center">
 
@@ -158,7 +159,7 @@ We appreciate your contributions and look forward to working together to improve
 </div>
 
 
-## Contributers
+## Contributers  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Red%20Heart.png" alt="Red Heart"  width="50" height="50" style="vertical-align: middle;" />
 
 - This project thanking all the contributors for having your valuable contribution to our project
 - Make sure you show some love by giving ⭐ to our repository
