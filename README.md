@@ -32,7 +32,7 @@
 </p>
 
 ## Table Of Contents 📚 
-
+- [Demo YouTube Version](https://www.youtube.com/watch?v=tHz1eVeVxic&t=6s)
 - [Introduction](https://github.com/sagnik3788/FlavorFleet/blob/main/README.md#introduction-)
 - [Features](https://github.com/sagnik3788/FlavorFleet/blob/main/README.md#introduction-)
 - [Development](https://github.com/sagnik3788/FlavorFleet/blob/main/README.md#development-)
@@ -45,9 +45,9 @@
 - [Contributors](https://github.com/sagnik3788/FlavorFleet/blob/main/README.md#contributors--)
 - [License](https://github.com/sagnik3788/FlavorFleet/blob/main/README.md#license)
 
-- ## Demo YouTube Version 📽️
+## Demo YouTube Version 📽️
 
-[![Watch the Demo]](https://www.youtube.com/watch?v=YOUR_VIDEO_ID_HERE)
+[![Watch the Demo](https://img.youtube.com/vi/YOUR_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID_HERE)
 
 Check out the video above for a visual walkthrough and demo of FlavorFleet. In this video, we showcase the key features and functionality of the project, giving you a closer look at how FlavorFleet works.
 
