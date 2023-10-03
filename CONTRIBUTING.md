@@ -62,7 +62,7 @@ Please note that by contributing to FlavorFleet, you are agreeing to follow our 
 
 ## Licensing
 
-By contributing to FlavorFleet, you agree that your contributions will be licensed under the [MIT License](LICENSE).
+By contributing to FlavorFleet, you agree that your contributions will be licensed under the [MIT License](./LICENCE).
 
 Thank you for contributing to FlavorFleet and being a part of our community! 🙌
 
