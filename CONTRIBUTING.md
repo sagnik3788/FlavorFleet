@@ -54,7 +54,7 @@ Please adhere to the following guidelines when contributing code:
 
 ## Getting Help
 
-If you have questions or need assistance with the contribution process, feel free to reach out to our [community on Discord](https://.com/discord). We're here to help and support you throughout the journey.
+If you have questions or need assistance with the contribution process, feel free to reach out to our maintainers. We're here to help and support you throughout the journey.
 
 ## Code of Conduct
 
