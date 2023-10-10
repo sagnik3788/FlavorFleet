@@ -198,6 +198,7 @@ We appreciate your contributions and look forward to working together to improve
 
 [//]: contributor-faces
 <a href="https://github.com/sagnik3788"><img src="./public/image/sagnik.png" alt="goingdust" title="goingdust" width="50" height="50"></a>
+<a href="https://github.com/Aloksh42"><img src="[145252984](https://github.com/sagnik3788/FlavorFleet/assets/125147261/ca3dca2e-3375-4367-83bc-6dcc002479ea)" alt="goingdust" title="goingdust" width="50" height="50"></a>
 
 [//]: contributor-faces
 
