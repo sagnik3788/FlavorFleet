@@ -1,67 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flavorfleet</title>
-    <link rel="stylesheet" href="http://localhost:4000/styles/Home.css">
-    <link rel="stylesheet" href="http://localhost:4000/styles/search.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="short icon" href="image/short_icon.png">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flavorfleet</title>
+        <link rel="stylesheet" href="http://localhost:4000/styles/Home.css">
+        <link rel="stylesheet" href="http://localhost:4000/styles/search.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="short icon" href="image/short_icon.png">
+    </head>
 
-    <section id="Home">
+    <body>
+        <section id="Home">
+            <nav>
+                <div class="logo">
+                    <a href="/Home"><img src="http://localhost:4000/image/logo4.png"></a>
+                </div>
 
-        <nav>
-            <div class="logo">
-                <a href="/Home"><img src="http://localhost:4000/image/logo4.png"></a>
+                <ul>
+                    <li>
+                        <a href="/search">
+                            <h3><i class="fa-solid fa-magnifying-glass"></i>Search</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.themealdb.com/browse.php?b=m">
+                            <h3><i class="fa-solid fa-tag"></i>Items</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/help">
+                            <h3><i class="fa-solid fa-life-ring"></i></i>Help</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/cart">
+                            <h3><i class="fa-solid fa-cart-shopping"></i>Cart</h3>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="login">
+                    <h3>
+                        <a href="/">Login</a>
+                    </h3>
+                </div>
+            </nav>
+
+            <!-- search -->
+            <div>
+
+                <div onclick="hideallfunction()" id="hideall"></div>
+
+                <div id="search-section-js" class="searchsection">
+                    <div role="search" class="search">
+                        <input tabindex="1" id="search-bar-js" class="searchbar" type="search" aria-label="Search text"
+                            placeholder="Search..." name="search">
+                        <button tabindex="-1" class="searchbutton" id="close-img-js" aria-label="Cancel"><img
+                                src="/image/round_close_black_24dp.png" alt="cancel" class="closeimg globalsearchremove"
+                                class="searchbutton" id="close-img-js" aria-label="Cancel"></button>
+                        <button tabindex="2" class="searchbutton" id="search-img-js" aria-label="Search"><img
+                                src="/image/round_search_black_24dp.png" alt="search" class="searchimg"></button>
+                    </div>
+                    <div class="middle">
+                        <div class="borderbetween globalsearchremove"></div>
+                    </div>
+                    <div class="middle">
+                        <ul tabindex="3" class="list globalsearchremove"></ul>
+                    </div>
+                </div>
             </div>
-                  
-            <ul>
-                <li><a href="/search"><h3><i class="fa-solid fa-magnifying-glass"></i>Search</h3></a></li>
-                <li><a href="https://www.themealdb.com/browse.php?b=m"><h3><i class="fa-solid fa-tag"></i>Items</a></h3></li>
-                <li><a href="/help"><h3><i class="fa-solid fa-life-ring"></i></i>Help</a></h3></li>
-                <li><a href="/cart"><h3><i class="fa-solid fa-cart-shopping"></i>Cart</a></h3></li>
-            </ul>
-        
-            <div class="login">
-                <h3><a href="/">Login</a></h3>
-            </div>
-        </nav>
-        
-<!-- search -->
-<div>
+            <!-- footer -->
 
-    <div onclick="hideallfunction()" id="hideall"></div>
-    
-    <div id="search-section-js" class="searchsection">
-        <div role="search" class="search">
-        <input tabindex="1" id="search-bar-js" class="searchbar" type="search" aria-label="Search text" placeholder="Search..." name="search">
-        <button tabindex="-1" class="searchbutton" id="close-img-js" aria-label="Cancel"><img src="/image/round_close_black_24dp.png" alt="cancel" class="closeimg globalsearchremove" class="searchbutton" id="close-img-js" aria-label="Cancel"></button>
-        <button tabindex="2" class="searchbutton" id="search-img-js" aria-label="Search"><img src="/image/round_search_black_24dp.png" alt="search" class="searchimg"></button>  
-    </div>
-        <div class="middle">
-        <div class="borderbetween globalsearchremove"></div>
-        </div>
-        <div class="middle">
-      <ul tabindex="3" class="list globalsearchremove">
-        <!-- <li class="section" role="option">Content 1</li>
-        <li class="noresult">No Result</li> -->
-      </ul>
-      </div>
-    
-      </div>
-    </div>
-<!-- footer -->
-
-<!-- api result -->
-<div id="search-results" class="result">
-  
-  </div>
-    
-    <script src="http://localhost:4000/js/search.js"></script>
-        
+            <!-- api result -->
+            <div id="search-results" class="result"></div>
+            <script src="http://localhost:4000/js/search.js"></script>
     </body>
 </html>
