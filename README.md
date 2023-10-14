@@ -197,9 +197,15 @@ We appreciate your contributions and look forward to working together to improve
 - Make sure you show some love by giving ⭐ to our repository
 
 [//]: contributor-faces
-<a href="https://github.com/sagnik3788"><img src="./public/image/sagnik.png" alt="goingdust" title="goingdust" width="50" height="50"></a>
-<a href="https://github.com/Aloksh42"><img src="./public/image/contributor.jpeg" alt="Aloksh42" title="Aloksh42" width="50" height="50"></a>
-<a href="https://github.com/himanchal08"><img src="./public/image/contributor1.png" alt="Himanchal" title="Himanchal" width="50" height="50"></a>
+<a href="https://github.com/sagnik3788/FlavorFleet/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=sagnik3788/FlavorFleet" />
+</a>
+
+
+ <!--
+    -Made with [contrib.rocks](https://contrib.rocks).
+  -->
+
 [//]: contributor-faces
 
 ## License
