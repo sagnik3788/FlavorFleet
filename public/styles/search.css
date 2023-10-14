@@ -48,14 +48,15 @@ a{
   .result-item {
     width: 270px;
     height: 270px;
-    margin: 50px;
-    border-radius: 10px; 
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); 
+    margin: 27px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+    top: 10%;
   }
   
   .meal-image {
@@ -68,6 +69,15 @@ a{
     z-index: -1;
   }
   
+  .meal-name {
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    opacity: 0.6;
+  }
   
   .result-item h4 {
     margin: 0;
@@ -144,16 +154,17 @@ div.middle {
     border: 1px solid lightgray; 
     border-radius: 20px;
     z-index: 1;
-    left: 550px;
-   
+    left: 460px;
 }
 
     .search {
         font-size: 20px;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
         color: #81D4FA;
+        flex-wrap: nowrap;
+        flex-direction: row;
     }
 
     .searchbar {
