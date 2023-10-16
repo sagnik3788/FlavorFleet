@@ -256,3 +256,43 @@ padding: 3vw 3vh;
 }
 
 }
+.help-list {
+    list-style-type: none;
+  }
+  
+  .help-item {
+    margin-bottom: 20px;
+  }
+  
+  .help-list-title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .list-customer {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  .cselector {
+    font-size: 20px;
+    transition: transform 0.2s;
+  }
+  
+  .cselector.active {
+    transform: rotate(180deg);
+  }
+  
+  .cpara {
+    display: none;
+    margin-top: 20px;
+    
+  }
+  
+  .cpara.active {
+    display: block;
+
+  }
+  
