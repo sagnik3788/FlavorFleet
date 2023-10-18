@@ -54,6 +54,7 @@
                 </ul>
               </div>
               <div class="right-block">
+                
                 <!-- Help for Restaurants -->
                 <div id="help-for-restaurents">
                   <h1>Help for Restaurants</h1>
@@ -139,99 +140,59 @@
                     <hr />
                   </ul>
                 </div>
+
       
                 <!-- Help for customer -->
                 <div id="help-for-customer">
                   <h1>Help for Customers</h1>
-                  <ul style="list-style-type: none">
-                    <div class="help-list-title-container">
-                      <li
-                        class="list-customer"
-                        onclick="showContentC(this)"
-                        id="ccontent1"
-                      >
-                      Is extra discount applicable on item total?
-                      </li>
-                      <p id="cselector1">&#x25BC;</p>
-                    </div>
-                    <p id="cpara1">
-                        Extra discount is applicable on effective item total, which is item total after the coupon discount has been applied
-                    </p>
-                    <hr />
-                    <div class="help-list-title-container">
-                      <li
-                        class="list-customer"
-                        onclick="showContentC(this)"
-                        id="ccontent2"
-                      >
-                      Is Flavorfleet One available in all cities ?
-                      </li>
-                      <p id="cselector2">&#x25BC;</p>
-                    </div>
-                    <p id="cpara2">
-                        Currently Flavorfleet One is available in select cities only.
-                    </p>
-                    <hr />
-                    <div class="help-list-title-container">
-                      <li
-                        class="list-customer"
-                        onclick="showContentC(this)"
-                        id="ccontent3"
-                      >
-                      What is Flavorfleet Customer Care Number?
-                      </li>
-                      <p id="cselector3">&#x25BC;</p>
-                    </div>
-                    <p id="cpara3">
-                        Call us (9233110188)
-                            </p>
-                    <hr />
-      
-                    <div class="help-list-title-container">
-                      <li
-                        class="list-customer"
-                        onclick="showContentC(this)"
-                        id="ccontent4"
-                      >
-                      Do you charge for delivery?
-                      </li>
-                      <p id="cselector4">&#x25BC;</p>
-                    </div>
-                    <p id="cpara4">
-                        Delivery fee varies from city to city and is applicable if order value is below a certain amount. Additionally, certain restaurants might have fixed delivery fees. Delivery fee (if any) is specified on the 'Review Order' page. 
-                    </p>
-                    <hr />
-      
-                    <div class="help-list-title-container">
-                      <li
-                        class="list-customer"
-                        onclick="showContentC(this)"
-                        id="ccontent5"
-                      >
-                      Can I edit my order?
-                      </li>
-                      <p id="cselector5">&#x25BC;</p>
-                    </div>
-                    <p id="cpara5">
-                        In order to edit your order, please click on "Help" and then "I wantto modify items in my order". We will connect you to a support agent who will assist you with the same. Please note that your order can be edited only if the restaurant is yet to confirm your order. Post that, we may not be able to modify your order if food preparation has started.
-                    
-                    </p>
-                    <hr />
-      
-                    <div class="help-list-title-container">
-                      <li
-                        class="list-customer"
-                        onclick="showContentC(this)"
-                        id="ccontent6"
-                      >
-                      I want to cancel my order
-                      </li>
-                      <p id="cselector6">&#x25BC;</p>
-                    </div>
-                    <p id="cpara6">
-                        In order to cancel your order, please click on "Help" and then "I want to cancel my order". Please note that we may charge you a cancellation fee as it helps us to minimise food wastage and also compensate our restaurant partners for cancelled orders.
-                    </p>
-                    <hr />
+                  <ul class="help-list">
+                    <li class="help-item">
+                      <div class="help-list-title-container">
+                        <span class="list-customer" onclick="showContentC(this)" id="ccontent1">Is extra discount applicable on item total?</span>
+                        <span class="cselector" id="cselector1">▼</span>
+                      </div>
+                      <p class="cpara" id="cpara1">Extra discount is applicable on the effective item total, which is the item total after the coupon discount has been applied.</p>
+                    </li>
+              
+                    <li class="help-item">
+                      <div class="help-list-title-container">
+                        <span class="list-customer" onclick="showContentC(this)" id="ccontent2">Is Flavorfleet One available in all cities?</span>
+                        <span class="cselector" id="cselector2">▼</span>
+                      </div>
+                      <p class="cpara" id="cpara2">Currently Flavorfleet One is available in select cities only.</p>
+                    </li>
+              
+                    <li class="help-item">
+                      <div class="help-list-title-container">
+                        <span class="list-customer" onclick="showContentC(this)" id="ccontent3">What is Flavorfleet Customer Care Number?</span>
+                        <span class="cselector" id="cselector3">▼</span>
+                      </div>
+                      <p class="cpara" id="cpara3">Call us (9233110188)</p>
+                    </li>
+              
+                    <li class="help-item">
+                      <div class="help-list-title-container">
+                        <span class="list-customer" onclick="showContentC(this)" id="ccontent4">Do you charge for delivery?</span>
+                        <span class="cselector" id="cselector4">▼</span>
+                      </div>
+                      <p class="cpara" id="cpara4">Delivery fee varies from city to city and is applicable if the order value is below a certain amount. Additionally, certain restaurants might have fixed delivery fees. Delivery fee (if any) is specified on the 'Review Order' page.</p>
+                    </li>
+              
+                    <li class="help-item">
+                      <div class="help-list-title-container">
+                        <span class="list-customer" onclick="showContentC(this)" id="ccontent5">Can I edit my order?</span>
+                        <span class="cselector" id="cselector5">▼</span>
+                      </div>
+                      <p class="cpara" id="cpara5">In order to edit your order, please click on "Help" and then "I want to modify items in my order." We will connect you to a support agent who will assist you with the same. Please note that your order can be edited only if the restaurant is yet to confirm your order. Post that, we may not be able to modify your order if food preparation has started.</p>
+                    </li>
+              
+                    <li class="help-item">
+                      <div class="help-list-title-container">
+                        <span class="list-customer" onclick="showContentC(this)" id="ccontent6">I want to cancel my order</span>
+                        <span class="cselector" id="cselector6">▼</span>
+                      </div>
+                      <p class="cpara" id="cpara6">In order to cancel your order, please click on "Help" and then "I want to cancel my order." Please note that we may charge you a cancellation fee as it helps us to minimize food wastage and also compensate our restaurant partners for canceled orders.</p>
+                    </li>
                   </ul>
                 </div>
               </div>
