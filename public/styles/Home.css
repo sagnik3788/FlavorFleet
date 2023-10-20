@@ -5,6 +5,10 @@
     font-family: sans-serif;
 }
 
+#Effect {
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 10px rgb(187, 152, 35);}
+
 section{
     width: 100%;
     height: 100vh;
