@@ -34,11 +34,11 @@ function showContentR(el) {
     document.getElementById("list-item1").style.backgroundColor =
       "var(--background)";
     document.getElementById("list-item2").style.backgroundColor =
-      "rgb(232, 232, 232)";
+      "white";
     document.getElementById("button1").style.backgroundColor =
       "var(--background)";
     document.getElementById("button2").style.backgroundColor =
-      "rgb(232, 232, 232)";
+      "white";
   }
   function helpShowCustomers(){
     document.getElementById("help-for-restaurents").style.display = "none";
@@ -46,11 +46,11 @@ function showContentR(el) {
     document.getElementById("list-item2").style.backgroundColor =
       "var(--background)";
     document.getElementById("list-item1").style.backgroundColor =
-      "rgb(232, 232, 232)";
+      "white";
       document.getElementById("button2").style.backgroundColor =
       "var(--background)";
     document.getElementById("button1").style.backgroundColor =
-      "rgb(232, 232, 232)";
+      "white";
   }
   
   helpShowCustomers();
