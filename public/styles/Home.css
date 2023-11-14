@@ -909,25 +909,25 @@ section .main .main_image img{
 
 /*Oder*/
 
-.oder{
+.order{
     width: 100%;
     height: 100vh;
     padding: 5px 0;
 }
 
-.oder h1{
+.order h1{
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 45px;
 }
 
-.oder h1 span{
+.order h1 span{
     color: #facc22;
     margin-right: 10px;
 }
 
-.oder .oder_main{
+.order .order_main{
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -935,36 +935,36 @@ section .main .main_image img{
     top: 15px;
 }
 
-.oder .oder_main .oder_img img{
+.order .order_main .order_img img{
     width: 650px;
 }
 
-.oder .oder_main .oder_form{
-    width: 50%;
+.order .order_main .order_form{
+    width: 60%;
     height: 620px;
     background: #faf3ce;
     padding: 15px 20px 0 20px;
     border-radius: 10px;
 }
 
-.oder .oder_main .oder_form h2{
+.order .order_main .order_form h2{
     text-align: center;
     margin-bottom: 40px;
     font-size: 30px;
 }
 
-.oder .oder_main .oder_form .oder_list{
+.order .order_main .order_form .order_list{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 0 20px;
     margin-bottom: 30px;
 }
 
-.oder .oder_main .oder_form .oder_list p{
+.order .order_main .order_form .order_list p{
     margin-bottom: 5px;
 }
 
-.oder .oder_main .oder_form .oder_list input{
+.order .order_main .order_form .order_list input{
     width: 350px;
     border: 2px solid #facc22;
     border-radius: 5px;
@@ -975,7 +975,7 @@ section .main .main_image img{
     margin-bottom: 15px;
 }
 
-.oder .oder_main .oder_form .oder_list textarea{
+.order .order_main .order_form .order_list textarea{
     width: 350px;
     height: 200px;
     border: 2px solid #facc22;
@@ -986,7 +986,7 @@ section .main .main_image img{
     padding: 10px 5px;
 }
 
-.oder .oder_main .oder_form .oder_btn{
+.order .order_main .order_form .order_btn{
     padding: 10px 20px;
     border: 2px solid #facc22;
     text-decoration: none;
@@ -994,11 +994,21 @@ section .main .main_image img{
     background: #facc22;
 }
 
-.oder .oder_main .oder_form .oder_btn i{
+.order .order_main .order_form .order_btn i{
     margin-right: 8px;
 }
 
-
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+  }
 
 
 /*Footer*/
