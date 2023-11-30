@@ -123,8 +123,21 @@ npm install
 
 2. Install Dependencies:
 ```shell
-npm run start
+# Install Dependencies
+npm install
 
+# Navigate to the src/routes directory
+cd src/routes
+
+# Run dish-server.js
+node dish-server.js
+```
+Open a new terminal window/tab
+```
+# Run user-server.js
+node user-server.js
+
+# Open your browser and visit localhost:4000 to access the application
 
 ```
 
