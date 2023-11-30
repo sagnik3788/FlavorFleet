@@ -133,14 +133,13 @@ cd src/routes
 node dish-server.js
 ```
 Open a new terminal window/tab
+
 ```
 # Run user-server.js
 node user-server.js
 
-# Open your browser and visit localhost:4000 to access the application
-
 ```
-
+[Visit the application](http://localhost:4000)
 The development environment should now be set up. Additional information on the different application component can be found under README.md file. Happy hacking! 👾
 </details>
 
