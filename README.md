@@ -139,7 +139,8 @@ node dish-server.js
 node user-server.js
 
 ```
-Visit the application:-[http://localhost:4000]
+Visit the application: (http://localhost:4000)
+
 The development environment should now be set up. Additional information on the different application component can be found under README.md file. Happy hacking! 👾
 </details>
 
