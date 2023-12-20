@@ -120,8 +120,7 @@ git clone https://github.com/sagnik3788/FlavorFleet.git
 cd FlavorFleet
 npm install
 ```
-3. Run with Docker
-Build Docker image
+3. Build Docker image
 ```shell
 docker build -t flavorfleet .
 ```
