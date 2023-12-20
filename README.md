@@ -120,8 +120,18 @@ git clone https://github.com/sagnik3788/FlavorFleet.git
 cd FlavorFleet
 npm install
 ```
+3. Run with Docker
+Build Docker image
+```shell
+docker build -t flavorfleet .
+```
+ Run Docker container
+```shell
+docker run -p 4000:4000 flavorfleet
+```
+Visit the application: (http://localhost:4000)
 
-2. Install Dependencies:
+Alternatively, you can run the application without Docker:
 ```shell
 # Install Dependencies
 npm install
@@ -132,7 +142,7 @@ cd src/routes
 # Run dish-server.js
 node dish-server.js
 ```
-3.Open a new terminal window/tab
+Open a new terminal window/tab
 
 ```
 # Run user-server.js
