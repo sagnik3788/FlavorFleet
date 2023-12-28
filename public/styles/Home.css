@@ -44,21 +44,27 @@ section nav .logo img{
     position: relative;
     left: -118%;
     cursor: pointer;
+    margin-left: 110%;      
 }
 
 section nav ul{
     list-style: none;
+    
+    margin-left: 60%;
 }
 
 section nav ul li{
     display: inline-block;
     margin: 0 10px;
+    
 }
 
 section nav ul li a{
     color: black;
     text-decoration: none;
     transition: 0.3s;
+   
+    
 }
 
 section nav ul li a.action{
@@ -1017,21 +1023,33 @@ footer{
     width: 100%;
     padding: 30px 0 0 20px;
     background: #eeeeee;
+    
 }
 
 footer .footer_main{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 4%;
+    
 }
 
 footer .footer_main .footer_tag{
     text-align: center;
+    border-left: 2px solid #facc22;
+
+}
+
+footer .footer_main :first-child{
+    text-align: center;
+    border-style: none;
+
 }
 
 footer .footer_main .footer_tag h2{
     color: #000;
     margin-bottom: 25px;
     font-size: 30px;
+    text-shadow: -3px -3px 4px rgb(152, 147, 147);
 }
 
 footer .footer_main .footer_tag p{
@@ -1057,6 +1075,10 @@ footer .end{
 footer .end span{
     color: #facc22;
     margin-left: 10px;
+}
+
+footer .end span:hover{
+    font-size: x-large;
 }
 
 ::-webkit-scrollbar{
