@@ -1035,21 +1035,17 @@ footer .footer_main{
 
 footer .footer_main .footer_tag{
     text-align: center;
-    border-left: 2px solid #facc22;
-
 }
 
 footer .footer_main :first-child{
     text-align: center;
     border-style: none;
-
 }
 
 footer .footer_main .footer_tag h2{
     color: #000;
     margin-bottom: 25px;
     font-size: 30px;
-    text-shadow: -3px -3px 4px rgb(152, 147, 147);
 }
 
 footer .footer_main .footer_tag p{
