@@ -7,7 +7,7 @@
     ],
     "routes":[
         {
-            "src":"src/routes/.*",
+            "src":"/src/routes/.*",
             "dest":"user-server.js"
         }
     ]
