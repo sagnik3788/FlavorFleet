@@ -1,7 +1,6 @@
 {
     "rewrites": [
-      { "source": "/(.*)", "destination": "/src/routes/user-server.js" },
-      { "source": "/(.*)", "destination": "/src/routes/dish-server.js" }
+      { "source": "/(.*)", "destination": "/" }
     ]
   }
   
