@@ -1,3 +1,0 @@
-{
-  "rewrites": [{ "source": "/src/routes/(.*)", "destination": "/src/routes/user-server.js" }]
-}
