@@ -44,11 +44,10 @@ app.get("/cart", (req, res) => {
 });
 
 
+// ---------------- Dish Routes ------------------
 
-
-// Routes
 app.get('/dish', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public/templates/dish.html'));
+    res.sendFile(path.join(__dirname, '../../public/templates/dish.html'));
 });
 
 
