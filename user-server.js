@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require("express");
 const app = express();
 const PORT = 4000;
@@ -85,7 +86,6 @@ app.get('/dish/:id', async (req, res) => {
 
 
 
-require('dotenv').config();
 
 
 console.log(process.env.MONGODB_URI);
