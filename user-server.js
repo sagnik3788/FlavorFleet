@@ -12,12 +12,12 @@ const fetch = require('node-fetch');
 app.use(express.static(path.join(__dirname, "public")));
 
 // Serve HTML templates
-app.get("/", (req, res) => res.sendFile(path.join(__dirname, "..", "..", "public", "templates", "login.html")));
-app.get("/help", (req, res) => res.sendFile(path.join(__dirname, "..", "..", "public", "templates", "help.html")));
-app.get("/search", (req, res) => res.sendFile(path.join(__dirname, "..", "..", "public", "templates", "search.html")));
-app.get("/Home", (req, res) => res.sendFile(path.join(__dirname, "..", "..", "public", "templates", "Home.html")));
-app.get("/forgot-password", (req, res) => res.sendFile(path.join(__dirname, "..", "..", "public", "templates", "forgot-password.html")));
-app.get("/cart", (req, res) => res.sendFile(path.join(__dirname, "..", "..", "public", "templates", "cart.html")));
+app.get("/", (req, res) => res.sendFile(path.join(__dirname,  "public", "templates", "login.html")));
+app.get("/help", (req, res) => res.sendFile(path.join(__dirname, "public", "templates", "help.html")));
+app.get("/search", (req, res) => res.sendFile(path.join(__dirname, "public", "templates", "search.html")));
+app.get("/Home", (req, res) => res.sendFile(path.join(__dirname,  "public", "templates", "Home.html")));
+app.get("/forgot-password", (req, res) => res.sendFile(path.join(__dirname, "public", "templates", "forgot-password.html")));
+app.get("/cart", (req, res) => res.sendFile(path.join(__dirname,  "public", "templates", "cart.html")));
 
 // Dish Routes
 app.get('/dish', (req, res) => res.sendFile(path.join(__dirname, 'public', 'templates', 'dish.html')));
