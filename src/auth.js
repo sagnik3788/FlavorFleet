@@ -28,18 +28,26 @@ const User = require('./models/user');
 
 // Register user
 app.post('/register', async (req, res) => {
-    try {
-        const hashedPassword = await bcrypt.hash(req.body.password, 10);
-        const user = new User({
-            email: req.body.email,
-            password: hashedPassword,
-        });
-        await user.save();
-        res.status(201).send('complete');
-    } catch (error) {
-        console.error('Registration error:', error);
-        res.status(500).send('Registration failed');
+
+    const {email,password} = req.body;
+    const userExist = await User.findOne({email});
+    if(userExist) {
+        res.status(400).json({message:"User already exist. Try to login"});
     }
+
+    try {
+        const hashedPassword = await bcrypt.hash(password,10);
+        const Newuser = User.create({
+            email:email,
+            password:hashedPassword
+        })
+        await Newuser.save();
+        res.status(201).json({message:"complete"});
+    } catch (error) {
+        console.log("Registration failed",error);
+        res.status(500).json({message:"Registration failed"})
+    }
+
 });
 
 // Login user
