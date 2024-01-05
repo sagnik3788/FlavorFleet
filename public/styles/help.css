@@ -311,7 +311,14 @@ padding: 3vw 3vh; */
     margin: 0px;
 }
 
+/* TABLETS */
 
+@media only screen and (min-width: 750px) and (max-width : 1024px){ 
+    footer .footer_main .footer_tag h2 {
+        font-size: 2.8vw;
+    };
+    
+}
 
 /* MOBILE */
 
@@ -339,6 +346,26 @@ padding: 3vw 3vh; */
 #help-for-restaurents h1{
     padding: 0px;
 }
+
+footer .footer_main .footer_tag h2{
+    color: #000;
+    margin: 0%;
+    margin-bottom: 25px;
+    font-size: 2.5vw;
+}
+footer .footer_main .footer_tag p,a{
+    font-size: 1.7vw;
+    word-wrap:break-word;
+}
+footer .footer_main .footer_tag{
+   width: 6vw;
+}
+footer .footer_main{
+    width: 80vw;
+    margin-left:6% ;
+}
+
+
 
 }
 .help-list {
