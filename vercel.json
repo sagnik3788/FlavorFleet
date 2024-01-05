@@ -9,6 +9,6 @@
     "routes": [
       { "src": "/(.*)", "dest": "/user-server.js" }
     ],
-    "public": "/public"
+    "public": true
   }
   
