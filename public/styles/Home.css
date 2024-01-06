@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: serif;
+    font-family: 'Philosopher', sans-serif;
 }
 
 #Effect {
@@ -107,8 +107,9 @@ section .main .main_text h1{
 
 section .main .main_text h1 span{
     color: #facc22;
-    font-family: polo;
+    font-family: 'Philosopher', sans-serif;
 }
+
 
 section .main .main_text p{
     color: #000;
@@ -161,10 +162,6 @@ section .main .main_image img{
     width: 650px;
     animation: animate 5s linear infinite;
 }
-
-
-
-
 /*--About--*/
 
 .about{
@@ -187,9 +184,10 @@ section .main .main_image img{
 }
 
 .about .about_main .about_text h1{
-    font-size: 85px;
+    font-size: 55px;
     position: relative;
     bottom: 40px;
+    left: 50%;
 }
 
 .about .about_main .about_text h1 span{
@@ -282,7 +280,73 @@ section .main .main_image img{
 }
 
 
+:root {
+    --body-background: #fff;
+    --title-color: #333;
+    --title-font: monospace;
+    --typewriter-characters: 18;
+    --animation-time: 3s;
+    --animation-delay: 0.75s;
+    --accent-color: rgb(0, 48, 4);
+}
 
+.title-box {
+    width: max-content;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.title {
+    text-align: center;
+    transform: scale(2);
+    color: var(--title-color);
+    font-weight: 600;
+    position: relative;
+    width: max-content;
+}
+
+.title::before,
+.title::after,
+.sub-title::before,
+.sub-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+
+.title::before {
+    background-color: var(--body-background);
+    animation: typewriter var(--animation-time) steps(var(--typewriter-characters)) var(--animation-delay) forwards;
+}
+
+@keyframes typewriter {
+    to {
+        left: 100%;
+    }
+}
+
+.title::after {
+    width: 0.12em;
+    background: var(--title-color);
+    animation: typewriter var(--animation-time) steps(var(--typewriter-characters)) var(--animation-delay) forwards, blinker 500ms infinite forwards;
+    opacity: 1;
+
+}
+
+@keyframes blinker {
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fadein {
+    to {
+        opacity: 1;
+    }
+}
 
 
 /*Menu*/
@@ -290,7 +354,7 @@ section .main .main_image img{
 .menu{
     width: 100%;
     height: 100vh;
-    padding: 75px 0;
+    padding: 55px 0;
 }
 
 .menu h1{
@@ -418,21 +482,20 @@ section .main .main_image img{
 .banner{
     width: 100%;
     height: 50vh;
-    margin: 10px 0;
+    margin: 0;
     background-image: url(/image/banner.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .banner h1{
-    font-family: P22Grenville;
     color: #facc22;
-    font-size: 100px;
+    font-size: 90px;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    padding-top: 25px;
+    padding-top: 35px;
 }
 
 .banner .banner_center{
@@ -443,9 +506,8 @@ section .main .main_image img{
     margin: 0 auto;
 }
 .banner .banner_center h2{
-    font-size: 80px;
+    font-size: 105px;
     margin-right: 3px;
-    font-family: Norwester;
     color: #fff;
 }
 
@@ -462,9 +524,12 @@ section .main .main_image img{
 }
 
 .banner .banner_center .banner-percent{
-    font-size: 40px;
+    font-size: 50px;
 }
 
+.banner .banner_center .banner-off{
+    font-size: 20px;
+}
 
 .banner .banner_btn{
     color: #fff;
@@ -473,7 +538,7 @@ section .main .main_image img{
     text-decoration: none;
     position: relative;
     top: 10%;
-    left: 46%;
+    left: 45.5%;
     z-index: 5;
 }
 
@@ -599,7 +664,7 @@ section .main .main_image img{
 }
 
 .offer .offer_box .offer_card_1 .offer_tag h1{
-    font-family: QuillScript;
+    font-family: 'Philosopher', sans-serif;
     font-size: 60px;
     color: #facc22;
 }
