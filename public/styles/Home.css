@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Philosopher', sans-serif;
 }
 
 
@@ -101,7 +101,7 @@ section .main{
 
 section .main .main_text h1{
     color: #000;
-    font-size: 75px;
+    font-size: 85px;
     position: relative;
     top: -25px;
     left: 5%;
@@ -109,21 +109,22 @@ section .main .main_text h1{
 
 section .main .main_text h1 span{
     color: #facc22;
-    font-family: polo;
+    font-family: 'Philosopher', sans-serif;
 }
+
 
 section .main .main_text p{
     color: #000;
     width: 650px;
     position: relative;
-    top: 20px;
+    top: 5px;
     left: 5%;
     line-height: 23px;
     text-align: justify;
 }
 
 section .main .main_text .btn i{
-    margin-right: 8px;
+    margin-right: 5px;
 }
 
 section .main .main_text .btn{
@@ -132,7 +133,7 @@ section .main .main_text .btn{
     border: 2px solid #facc22;
     padding: 10px 20px;
     position: relative;
-    top: 100px;
+    top: 60px;
     left: 5%;
     transition: 0.3s;
 }
@@ -163,10 +164,6 @@ section .main .main_image img{
     width: 650px;
     animation: animate 5s linear infinite;
 }
-
-
-
-
 /*--About--*/
 
 .about{
@@ -192,9 +189,10 @@ section .main .main_image img{
 }
 
 .about .about_main .about_text h1{
-    font-size: 45px;
+    font-size: 55px;
     position: relative;
     bottom: 40px;
+    left: 50%;
 }
 
 .about .about_main .about_text h1 span{
@@ -205,7 +203,7 @@ section .main .main_image img{
 .about .about_main .about_text h3{
     position: relative;
     bottom: 10px;
-    font-size: 25px;
+    font-size: 30px;
 }
 
 .about .about_main .about_text p{
@@ -250,7 +248,7 @@ section .main .main_image img{
 
 .about .about_main .about_text .about_btn i{
     font-size: 15px;
-    margin-right: 8px;
+    margin-right: 5px;
 }
 
 .about .about_main .about_text .about_btn{
@@ -287,7 +285,73 @@ section .main .main_image img{
 }
 
 
+:root {
+    --body-background: #fff;
+    --title-color: #333;
+    --title-font: monospace;
+    --typewriter-characters: 18;
+    --animation-time: 3s;
+    --animation-delay: 0.75s;
+    --accent-color: rgb(0, 48, 4);
+}
 
+.title-box {
+    width: max-content;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.title {
+    text-align: center;
+    transform: scale(2);
+    color: var(--title-color);
+    font-weight: 600;
+    position: relative;
+    width: max-content;
+}
+
+.title::before,
+.title::after,
+.sub-title::before,
+.sub-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+
+.title::before {
+    background-color: var(--body-background);
+    animation: typewriter var(--animation-time) steps(var(--typewriter-characters)) var(--animation-delay) forwards;
+}
+
+@keyframes typewriter {
+    to {
+        left: 100%;
+    }
+}
+
+.title::after {
+    width: 0.12em;
+    background: var(--title-color);
+    animation: typewriter var(--animation-time) steps(var(--typewriter-characters)) var(--animation-delay) forwards, blinker 500ms infinite forwards;
+    opacity: 1;
+
+}
+
+@keyframes blinker {
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fadein {
+    to {
+        opacity: 1;
+    }
+}
 
 
 /*Menu*/
@@ -295,14 +359,14 @@ section .main .main_image img{
 .menu{
     width: 100%;
     height: 100vh;
-    padding: 75px 0;
+    padding: 55px 0;
 }
 
 .menu h1{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 45px;
+    font-size: 75px;
     color: #000;
 }
 
@@ -412,7 +476,7 @@ section .main .main_image img{
 }
 
 .menu .menu_box .menu_card .menu_text .menu_btn i{
-    margin-right: 8px;
+    margin-right: 5px;
 }
 
 
@@ -423,21 +487,20 @@ section .main .main_image img{
 .banner{
     width: 100%;
     height: 50vh;
-    margin: 10px 0;
+    margin: 0;
     background-image: url(/image/banner.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .banner h1{
-    font-family: P22Grenville;
     color: #facc22;
-    font-size: 100px;
+    font-size: 90px;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    padding-top: 25px;
+    padding-top: 35px;
 }
 
 .banner .banner_center{
@@ -448,9 +511,8 @@ section .main .main_image img{
     margin: 0 auto;
 }
 .banner .banner_center h2{
-    font-size: 60px;
-    margin-right: 25px;
-    font-family: Norwester;
+    font-size: 105px;
+    margin-right: 3px;
     color: #fff;
 }
 
@@ -462,6 +524,18 @@ section .main .main_image img{
     font-family: Norwester;
 }
 
+.banner .banner_center span{
+    color: #fff;
+}
+
+.banner .banner_center .banner-percent{
+    font-size: 50px;
+}
+
+.banner .banner_center .banner-off{
+    font-size: 20px;
+}
+
 .banner .banner_btn{
     color: #fff;
     border: 2px solid #facc22;
@@ -469,12 +543,12 @@ section .main .main_image img{
     text-decoration: none;
     position: relative;
     top: 10%;
-    left: 46%;
+    left: 45.5%;
     z-index: 5;
 }
 
 .banner .banner_btn i{
-    margin-right: 8px;
+    margin-right: 5px;
 }
 
 .banner .banner_btn::before{
@@ -509,7 +583,7 @@ section .main .main_image img{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 45px;
+    font-size: 65px;
 }
 
 .gallery h1 span{
@@ -595,7 +669,7 @@ section .main .main_image img{
 }
 
 .offer .offer_box .offer_card_1 .offer_tag h1{
-    font-family: QuillScript;
+    font-family: 'Philosopher', sans-serif;
     font-size: 60px;
     color: #facc22;
 }
@@ -603,8 +677,13 @@ section .main .main_image img{
 .offer .offer_box .offer_card_1 .offer_tag p{
     margin-top: 30px;
     width: 200px;
-    text-align: justify;
     line-height: 22px;
+}
+
+.offer_tag_pdiv {
+    background-color: #0000005a;
+    padding: 10px 10px 10px 10px;
+    box-shadow: 1px 1px 1px rgba(127, 127, 127, 0.598);
 }
 
 .offer .offer_box .offer_card_1 .offer_tag .offer_btn{
@@ -635,7 +714,7 @@ section .main .main_image img{
 }
 
 .offer .offer_box .offer_card_1 .offer_tag .offer_btn i{
-    margin-right: 8px;
+    margin-right: 5px;
 }
 
 .offer .offer_box .offer_card_2{
@@ -675,7 +754,6 @@ section .main .main_image img{
 .offer .offer_box .offer_card_2 .offer_tag p{
     margin-top: 30px;
     width: 200px;
-    text-align: justify;
     line-height: 22px;
 }
 
@@ -707,7 +785,7 @@ section .main .main_image img{
 }
 
 .offer .offer_box .offer_card_2 .offer_tag .offer_btn i{
-    margin-right: 8px;
+    margin-right: 5px;
 }
 
 
@@ -726,7 +804,7 @@ section .main .main_image img{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 45px;
+    font-size: 50px;
 }
 
 .team h1 span{
@@ -816,7 +894,7 @@ section .main .main_image img{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 45px;
+    font-size: 50px;
 }
 
 .blog h1 span{
@@ -930,7 +1008,7 @@ section .main .main_image img{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 45px;
+    font-size: 50px;
 }
 
 .order h1 span{
@@ -1074,7 +1152,7 @@ footer .end{
 }
 
 footer .end span{
-    color: #facc22;
+    color: #facb22;
     margin-left: 10px;
 }
 
