@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,14 +9,15 @@
 
 #Effect {
     color: white;
-    text-shadow: 1px 1px 2px black, 0 0 10px rgb(187, 152, 35);}
+    text-shadow: 1px 1px 2px black, 0 0 10px rgb(187, 152, 35);
+}
 
-section{
+section {
     width: 100%;
     height: 100vh;
 }
 
-section nav{
+section nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -25,20 +26,21 @@ section nav{
     right: 0;
     left: 0;
     z-index: 1000;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    height: 80px; 
-    padding: 10px 20px; 
-    margin: 0; 
-    line-height: 1; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    height: 80px;
+    padding: 10px 20px;
+    margin: 0;
+    line-height: 1;
 }
-.cart{
+
+.cart {
     width: 20px;
     position: relative;
     left: -15%;
     cursor: pointer;
 }
 
-section nav .logo img{
+section nav .logo img {
     /* width: 120px;
     margin: 20px 0; */
     width: 140px;
@@ -46,38 +48,38 @@ section nav .logo img{
     position: relative;
     left: -118%;
     cursor: pointer;
-    margin-left: 110%;      
+    margin-left: 110%;
 }
 
-section nav ul{
+section nav ul {
     list-style: none;
-    
+
     margin-left: 60%;
 }
 
-section nav ul li{
+section nav ul li {
     display: inline-block;
     margin: 0 10px;
-    
+
 }
 
-section nav ul li a{
+section nav ul li a {
     color: black;
     text-decoration: none;
     transition: 0.3s;
-   
-    
+
+
 }
 
-section nav ul li a.action{
+section nav ul li a.action {
     color: #facc22;
 }
 
-section nav ul li a:hover{
+section nav ul li a:hover {
     color: #facc22;
 }
 
-section nav .login a{
+section nav .login a {
     color: #000;
     text-decoration: none;
     border: 2px solid #facc22;
@@ -86,12 +88,12 @@ section nav .login a{
     transition: 0.3s;
 }
 
-section nav .login a:hover{
+section nav .login a:hover {
     background: #facc22;
     color: #fff;
 }
 
-section .main{
+section .main {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -99,7 +101,7 @@ section .main{
     top: 80px;
 }
 
-section .main .main_text h1{
+section .main .main_text h1 {
     color: #000;
     font-size: 75px;
     position: relative;
@@ -107,12 +109,12 @@ section .main .main_text h1{
     left: 5%;
 }
 
-section .main .main_text h1 span{
+section .main .main_text h1 span {
     color: #facc22;
     font-family: polo;
 }
 
-section .main .main_text p{
+section .main .main_text p {
     color: #000;
     width: 650px;
     position: relative;
@@ -122,11 +124,11 @@ section .main .main_text p{
     text-align: justify;
 }
 
-section .main .main_text .btn i{
+section .main .main_text .btn i {
     margin-right: 8px;
 }
 
-section .main .main_text .btn{
+section .main .main_text .btn {
     color: #000;
     text-decoration: none;
     border: 2px solid #facc22;
@@ -137,11 +139,11 @@ section .main .main_text .btn{
     transition: 0.3s;
 }
 
-section .main .main_text .btn:hover{
+section .main .main_text .btn:hover {
     color: #fff;
 }
 
-section .main .main_text .btn::before{
+section .main .main_text .btn::before {
     content: '';
     position: absolute;
     top: 0;
@@ -153,13 +155,13 @@ section .main .main_text .btn::before{
     transition: 0.3s;
 }
 
-section .main .main_text .btn:hover::before{
+section .main .main_text .btn:hover::before {
     top: unset;
     width: 100%;
     bottom: 0;
 }
 
-section .main .main_image img{
+section .main .main_image img {
     width: 650px;
     animation: animate 5s linear infinite;
 }
@@ -169,7 +171,7 @@ section .main .main_image img{
 
 /*--About--*/
 
-.about{
+.about {
     width: 100%;
     height: 100%;
     padding: 10px 0 0 0;
@@ -179,7 +181,7 @@ section .main .main_image img{
     background-position: center;
 }
 
-.about .about_main{
+.about .about_main {
     display: flex;
     width: 100%;
     align-items: center;
@@ -187,41 +189,41 @@ section .main .main_image img{
 }
 
 
-.about .about_main .about_image img{
+.about .about_main .about_image img {
     width: 100%;
 }
 
-.about .about_main .about_text h1{
+.about .about_main .about_text h1 {
     font-size: 45px;
     position: relative;
     bottom: 40px;
 }
 
-.about .about_main .about_text h1 span{
+.about .about_main .about_text h1 span {
     color: #facc22;
     margin-right: 15px;
 }
 
-.about .about_main .about_text h3{
+.about .about_main .about_text h3 {
     position: relative;
     bottom: 10px;
     font-size: 25px;
 }
 
-.about .about_main .about_text p{
+.about .about_main .about_text p {
     width: 650px;
     text-align: justify;
     line-height: 23px;
     margin-top: 20px;
 }
 
-.about .about_main .about_text .about_services{
+.about .about_main .about_text .about_services {
     margin-top: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.about .about_main .about_text .about_services .s_1{
+.about .about_main .about_text .about_services .s_1 {
     display: flex;
     align-items: center;
     width: 180px;
@@ -231,29 +233,29 @@ section .main .main_image img{
     cursor: pointer;
 }
 
-.about .about_main .about_text .about_services .s_1 i{
+.about .about_main .about_text .about_services .s_1 i {
     color: #000;
     margin: 5px 10px 5px 5px;
     font-size: 20px;
     transition: 0.3s;
 }
 
-.about .about_main .about_text .about_services .s_1:hover i{
+.about .about_main .about_text .about_services .s_1:hover i {
     color: #facc22;
 }
 
-.about .about_main .about_text .about_services .s_1 a{
+.about .about_main .about_text .about_services .s_1 a {
     text-decoration: none;
     color: #000;
     font-size: 16px;
 }
 
-.about .about_main .about_text .about_btn i{
+.about .about_main .about_text .about_btn i {
     font-size: 15px;
     margin-right: 8px;
 }
 
-.about .about_main .about_text .about_btn{
+.about .about_main .about_text .about_btn {
     position: relative;
     top: 35px;
     padding: 10px 20px;
@@ -264,11 +266,11 @@ section .main .main_image img{
     transition: 0.3s;
 }
 
-.about .about_main .about_text .about_btn:hover{
+.about .about_main .about_text .about_btn:hover {
     color: #fff;
 }
 
-.about .about_main .about_text .about_btn::before{
+.about .about_main .about_text .about_btn::before {
     content: '';
     position: absolute;
     top: 0;
@@ -280,7 +282,7 @@ section .main .main_image img{
     transition: 0.3s;
 }
 
-.about .about_main .about_text .about_btn:hover::before{
+.about .about_main .about_text .about_btn:hover::before {
     top: unset;
     width: 100%;
     bottom: 0;
@@ -292,13 +294,13 @@ section .main .main_image img{
 
 /*Menu*/
 
-.menu{
+.menu {
     width: 100%;
     height: 100vh;
     padding: 75px 0;
 }
 
-.menu h1{
+.menu h1 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -306,12 +308,12 @@ section .main .main_image img{
     color: #000;
 }
 
-.menu h1 span{
+.menu h1 span {
     color: #facc22;
     margin-left: 15px;
 }
 
-.menu .menu_box{
+.menu .menu_box {
     width: 95%;
     margin: 45px auto 0 auto;
     display: grid;
@@ -319,7 +321,7 @@ section .main .main_image img{
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.menu .menu_box .menu_card{
+.menu .menu_box .menu_card {
     background-image: url(/image/menu_card_bg.png);
     background-size: cover;
     background-position: center;
@@ -330,55 +332,55 @@ section .main .main_image img{
     cursor: pointer;
     padding: 20px 0;
     border-radius: 10px;
-    box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
 }
 
-.menu .menu_box .menu_card .menu_img{
+.menu .menu_box .menu_card .menu_img {
     margin: 0 auto;
     width: 420px;
     height: 300px;
     margin-bottom: 15px;
-    box-shadow: 0 0 8px rgba(0,0,0,0.7);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
 }
 
-.menu .menu_box .menu_card .menu_img img{
+.menu .menu_box .menu_card .menu_img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
 }
 
-.menu .menu_box .menu_card .menu_text h2{
+.menu .menu_box .menu_card .menu_text h2 {
     font-size: 30px;
     margin-bottom: 15px;
 }
 
-.menu .menu_box .menu_card .menu_text p{
+.menu .menu_box .menu_card .menu_text p {
     line-height: 21px;
     margin-bottom: 15px;
     margin: 0 auto;
     width: 400px;
 }
 
-.menu .menu_box .menu_card .menu_text .menu_icon{
+.menu .menu_box .menu_card .menu_text .menu_icon {
     color: #facc22;
     margin: 8px 0;
 }
 
-.menu .menu_box .menu_card .menu_text .price{
+.menu .menu_box .menu_card .menu_text .price {
     font-weight: bold;
     font-size: 20px;
     padding: 8px 0;
     margin-left: 45px;
 }
 
-.menu .menu_box .menu_card .menu_text .price sub{
+.menu .menu_box .menu_card .menu_text .price sub {
     margin-left: 5px;
     color: #6d6a6a;
     font-size: 13px;
 }
 
-.menu .menu_box .menu_card .menu_text .menu_btn{
+.menu .menu_box .menu_card .menu_text .menu_btn {
     color: #000;
     text-decoration: none;
     padding: 10px 20px;
@@ -389,11 +391,11 @@ section .main .main_image img{
     transition: 0.3s;
 }
 
-.menu .menu_box .menu_card .menu_text .menu_btn:hover{
+.menu .menu_box .menu_card .menu_text .menu_btn:hover {
     color: #fff;
 }
 
-.menu .menu_box .menu_card .menu_text .menu_btn::before{
+.menu .menu_box .menu_card .menu_text .menu_btn::before {
     content: '';
     position: absolute;
     top: 0;
@@ -405,13 +407,13 @@ section .main .main_image img{
     transition: 0.3s;
 }
 
-.menu .menu_box .menu_card .menu_text .menu_btn:hover::before{
+.menu .menu_box .menu_card .menu_text .menu_btn:hover::before {
     top: unset;
     bottom: 0;
     width: 100%;
 }
 
-.menu .menu_box .menu_card .menu_text .menu_btn i{
+.menu .menu_box .menu_card .menu_text .menu_btn i {
     margin-right: 8px;
 }
 
@@ -420,7 +422,7 @@ section .main .main_image img{
 
 /*Banner*/
 
-.banner{
+.banner {
     width: 100%;
     height: 50vh;
     margin: 10px 0;
@@ -429,7 +431,7 @@ section .main .main_image img{
     background-position: center;
 }
 
-.banner h1{
+.banner h1 {
     font-family: P22Grenville;
     color: #facc22;
     font-size: 100px;
@@ -440,21 +442,22 @@ section .main .main_image img{
     padding-top: 25px;
 }
 
-.banner .banner_center{
+.banner .banner_center {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 250px;
     margin: 0 auto;
 }
-.banner .banner_center h2{
+
+.banner .banner_center h2 {
     font-size: 60px;
     margin-right: 25px;
     font-family: Norwester;
     color: #fff;
 }
 
-.banner .banner_center h2 span{
+.banner .banner_center h2 span {
     margin-left: 45px;
     font-size: 30px;
     position: relative;
@@ -462,7 +465,7 @@ section .main .main_image img{
     font-family: Norwester;
 }
 
-.banner .banner_btn{
+.banner .banner_btn {
     color: #fff;
     border: 2px solid #facc22;
     padding: 10px 20px;
@@ -473,11 +476,11 @@ section .main .main_image img{
     z-index: 5;
 }
 
-.banner .banner_btn i{
+.banner .banner_btn i {
     margin-right: 8px;
 }
 
-.banner .banner_btn::before{
+.banner .banner_btn::before {
     content: '';
     position: absolute;
     top: 0;
@@ -489,7 +492,7 @@ section .main .main_image img{
     z-index: -1;
 }
 
-.banner .banner_btn:hover::before{
+.banner .banner_btn:hover::before {
     width: 100%;
     top: unset;
     bottom: 0;
@@ -500,24 +503,24 @@ section .main .main_image img{
 
 /*Gallery*/
 
-.gallery{
+.gallery {
     width: 100%;
     padding: 35px 0 50px 0;
 }
 
-.gallery h1{
+.gallery h1 {
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 45px;
 }
 
-.gallery h1 span{
+.gallery h1 span {
     color: #facc22;
     margin-left: 15px;
 }
 
-.gallery .gallery_box{
+.gallery .gallery_box {
     width: 95%;
     margin: 50px auto 0 auto;
     display: grid;
@@ -525,16 +528,16 @@ section .main .main_image img{
     grid-gap: 10px;
 }
 
-.gallery .gallery_box .gallery_image{
+.gallery .gallery_box .gallery_image {
     width: 470px;
     height: 350px;
     margin: 0 auto;
     border-radius: 5px;
     overflow: hidden;
-    box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
 }
 
-.gallery .gallery_box .gallery_image img{
+.gallery .gallery_box .gallery_image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -544,7 +547,7 @@ section .main .main_image img{
     transition: 0.3s;
 }
 
-.gallery .gallery_box .gallery_image:hover img{
+.gallery .gallery_box .gallery_image:hover img {
     transform: scale(1.1);
 }
 
@@ -552,13 +555,13 @@ section .main .main_image img{
 
 /*Offer*/
 
-.offer{
+.offer {
     width: 100%;
     height: auto;
     margin-bottom: 20px;
 }
 
-.offer .offer_box{
+.offer .offer_box {
     width: 95%;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -566,48 +569,48 @@ section .main .main_image img{
     margin: 0 auto;
 }
 
-.offer .offer_box .offer_card_1{
+.offer .offer_box .offer_card_1 {
     width: 720px;
     height: 470px;
 }
 
-.offer .offer_box .offer_card_1 .offer_img{
+.offer .offer_box .offer_card_1 .offer_img {
     width: 720px;
     height: 470px;
 }
 
-.offer .offer_box .offer_card_1 .offer_img img{
+.offer .offer_box .offer_card_1 .offer_img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
 }
 
-.offer .offer_box .offer_card_1 .offer_tag{
+.offer .offer_box .offer_card_1 .offer_tag {
     position: relative;
     bottom: 400px;
     color: #fff;
     padding: 0 35px;
 }
 
-.offer .offer_box .offer_card_1 .offer_tag h2{
+.offer .offer_box .offer_card_1 .offer_tag h2 {
     font-size: 45px;
 }
 
-.offer .offer_box .offer_card_1 .offer_tag h1{
+.offer .offer_box .offer_card_1 .offer_tag h1 {
     font-family: QuillScript;
     font-size: 60px;
     color: #facc22;
 }
 
-.offer .offer_box .offer_card_1 .offer_tag p{
+.offer .offer_box .offer_card_1 .offer_tag p {
     margin-top: 30px;
     width: 200px;
     text-align: justify;
     line-height: 22px;
 }
 
-.offer .offer_box .offer_card_1 .offer_tag .offer_btn{
+.offer .offer_box .offer_card_1 .offer_tag .offer_btn {
     color: #fff;
     border: 2px solid #facc22;
     padding: 10px 20px;
@@ -618,7 +621,7 @@ section .main .main_image img{
     transition: 0.3s;
 }
 
-.offer .offer_box .offer_card_1 .offer_tag .offer_btn::before{
+.offer .offer_box .offer_card_1 .offer_tag .offer_btn::before {
     content: '';
     position: absolute;
     top: 0;
@@ -630,56 +633,56 @@ section .main .main_image img{
     z-index: -1;
 }
 
-.offer .offer_box .offer_card_1 .offer_tag .offer_btn:hover::before{
+.offer .offer_box .offer_card_1 .offer_tag .offer_btn:hover::before {
     width: 100%;
 }
 
-.offer .offer_box .offer_card_1 .offer_tag .offer_btn i{
+.offer .offer_box .offer_card_1 .offer_tag .offer_btn i {
     margin-right: 8px;
 }
 
-.offer .offer_box .offer_card_2{
+.offer .offer_box .offer_card_2 {
     width: 720px;
     height: 470px;
 }
 
-.offer .offer_box .offer_card_2 .offer_img{
+.offer .offer_box .offer_card_2 .offer_img {
     width: 720px;
     height: 470px;
 }
 
-.offer .offer_box .offer_card_2 .offer_img img{
+.offer .offer_box .offer_card_2 .offer_img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
 }
 
-.offer .offer_box .offer_card_2 .offer_tag{
+.offer .offer_box .offer_card_2 .offer_tag {
     position: relative;
     bottom: 400px;
     color: #fff;
     padding: 0 35px;
 }
 
-.offer .offer_box .offer_card_2 .offer_tag h2{
+.offer .offer_box .offer_card_2 .offer_tag h2 {
     font-size: 45px;
 }
 
-.offer .offer_box .offer_card_2 .offer_tag h1{
+.offer .offer_box .offer_card_2 .offer_tag h1 {
     font-family: QuillScript;
     font-size: 60px;
     color: #facc22;
 }
 
-.offer .offer_box .offer_card_2 .offer_tag p{
+.offer .offer_box .offer_card_2 .offer_tag p {
     margin-top: 30px;
     width: 200px;
     text-align: justify;
     line-height: 22px;
 }
 
-.offer .offer_box .offer_card_2 .offer_tag .offer_btn{
+.offer .offer_box .offer_card_2 .offer_tag .offer_btn {
     color: #fff;
     border: 2px solid #facc22;
     padding: 10px 20px;
@@ -690,7 +693,7 @@ section .main .main_image img{
     transition: 0.3s;
 }
 
-.offer .offer_box .offer_card_2 .offer_tag .offer_btn::before{
+.offer .offer_box .offer_card_2 .offer_tag .offer_btn::before {
     content: '';
     position: absolute;
     top: 0;
@@ -702,11 +705,11 @@ section .main .main_image img{
     z-index: -1;
 }
 
-.offer .offer_box .offer_card_2 .offer_tag .offer_btn:hover::before{
+.offer .offer_box .offer_card_2 .offer_tag .offer_btn:hover::before {
     width: 100%;
 }
 
-.offer .offer_box .offer_card_2 .offer_tag .offer_btn i{
+.offer .offer_box .offer_card_2 .offer_tag .offer_btn i {
     margin-right: 8px;
 }
 
@@ -716,25 +719,25 @@ section .main .main_image img{
 
 /*Team*/
 
-.team{
+.team {
     width: 100%;
     height: 77vh;
     padding: 10px 0;
 }
 
-.team h1{
+.team h1 {
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 45px;
 }
 
-.team h1 span{
+.team h1 span {
     color: #facc22;
     margin-left: 15px;
 }
 
-.team .team_line_1{
+.team .team_line_1 {
     width: 100%;
     height: 50px;
     background: #facc22;
@@ -743,7 +746,7 @@ section .main .main_image img{
     z-index: 1;
 }
 
-.team .team_line_2{
+.team .team_line_2 {
     width: 100%;
     height: 50px;
     background: #facc22;
@@ -752,7 +755,7 @@ section .main .main_image img{
     z-index: 1;
 }
 
-.team .team_box{
+.team .team_box {
     width: 95%;
     height: auto;
     margin: 0 auto;
@@ -764,7 +767,7 @@ section .main .main_image img{
     grid-gap: 0;
 }
 
-.team .team_box .team_card{
+.team .team_box .team_card {
     width: 350px;
     height: 410px;
     background: #fff;
@@ -773,29 +776,29 @@ section .main .main_image img{
     border-radius: 10px;
     margin: 0 auto;
     z-index: 5;
-    box-shadow: 1px 2px 10px rgba(0,0,0,0.2);
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
-.team .team_box .team_card .team_img{
+.team .team_box .team_card .team_img {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.team .team_box .team_card .team_img img{
+.team .team_box .team_card .team_img img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
     object-position: center;
-    box-shadow: 0 0 8px rgba(0,0,0,0.3);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
 }
 
-.team .team_box .team_card .team_tag h2{
+.team .team_box .team_card .team_tag h2 {
     margin: 10px 0;
 }
 
-.team .team_box .team_card .team_tag p.info{
+.team .team_box .team_card .team_tag p.info {
     text-align: center;
     line-height: 23px;
     margin-top: 10px;
@@ -805,13 +808,13 @@ section .main .main_image img{
 
 /*Blog*/
 
-.blog{
+.blog {
     width: 100%;
     height: auto;
     padding: 30px 0;
 }
 
-.blog h1{
+.blog h1 {
     color: #000;
     display: flex;
     align-items: center;
@@ -819,12 +822,12 @@ section .main .main_image img{
     font-size: 45px;
 }
 
-.blog h1 span{
+.blog h1 span {
     color: #facc22;
     margin-left: 15px;
 }
 
-.blog .blog_box{
+.blog .blog_box {
     width: 95%;
     margin: 50px auto;
     display: grid;
@@ -832,15 +835,15 @@ section .main .main_image img{
     grid-gap: 10px;
 }
 
-.blog .blog_box .blog_card{
+.blog .blog_box .blog_card {
     margin: 0 auto;
     width: 450px;
     height: auto;
     border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
-.blog .blog_box .blog_card .blog_img{
+.blog .blog_box .blog_card .blog_img {
     width: 450px;
     height: 300px;
     overflow: hidden;
@@ -848,38 +851,38 @@ section .main .main_image img{
     border-top-right-radius: 10px;
 }
 
-.blog .blog_box .blog_card .blog_img img{
+.blog .blog_box .blog_card .blog_img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
 }
 
-.blog .blog_box .blog_card .blog_tag .blog_date{
+.blog .blog_box .blog_card .blog_tag .blog_date {
     width: 100%;
     color: #facc22;
     padding: 15px 0 0 20px;
     font-size: 14px;
 }
 
-.blog .blog_box .blog_card .blog_tag .blog_date i{
+.blog .blog_box .blog_card .blog_tag .blog_date i {
     margin-left: 8px;
     font-size: 14px;
     cursor: pointer;
 }
 
-.blog .blog_box .blog_card .blog_tag .blog_heading{
+.blog .blog_box .blog_card .blog_tag .blog_heading {
     padding: 10px 20px 10px 20px;
     font-size: 25px;
 }
 
-.blog .blog_box .blog_card .blog_tag .blog_text{
+.blog .blog_box .blog_card .blog_tag .blog_text {
     padding: 0 20px 10px 20px;
     text-align: justify;
     line-height: 21px;
 }
 
-.blog .blog_box .blog_card .blog_tag hr{
+.blog .blog_box .blog_card .blog_tag hr {
     width: 95%;
     margin: 0 auto;
     height: 1px;
@@ -888,30 +891,30 @@ section .main .main_image img{
     border-radius: 5px;
 }
 
-.blog .blog_box .blog_card .blog_tag .view_and_like{
+.blog .blog_box .blog_card .blog_tag .view_and_like {
     padding: 10px 20px 25px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.blog .blog_box .blog_card .blog_tag .view_and_like .view{
+.blog .blog_box .blog_card .blog_tag .view_and_like .view {
     display: flex;
     align-items: center;
 }
 
-.blog .blog_box .blog_card .blog_tag .view_and_like .view p{
+.blog .blog_box .blog_card .blog_tag .view_and_like .view p {
     margin-right: 10px;
     font-size: 14px;
 }
 
-.blog .blog_box .blog_card .blog_tag .view_and_like .like{
+.blog .blog_box .blog_card .blog_tag .view_and_like .like {
     display: flex;
     align-items: center;
     font-size: 14px;
 }
 
-.blog .blog_box .blog_card .blog_tag .view_and_like .like i{
+.blog .blog_box .blog_card .blog_tag .view_and_like .like i {
     cursor: pointer;
     margin-left: 5px;
 }
@@ -920,25 +923,25 @@ section .main .main_image img{
 
 /*Oder*/
 
-.order{
+.order {
     width: 100%;
-    height: 100vh;
-    padding: 5px 0;
+    /* height: 100vh;
+    padding: 5px 0; */
 }
 
-.order h1{
+.order h1 {
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 45px;
 }
 
-.order h1 span{
+.order h1 span {
     color: #facc22;
     margin-right: 10px;
 }
 
-.order .order_main{
+.order .order_main {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -946,11 +949,11 @@ section .main .main_image img{
     top: 15px;
 }
 
-.order .order_main .order_img img{
+.order .order_main .order_img img {
     width: 650px;
 }
 
-.order .order_main .order_form{
+.order .order_main .order_form {
     width: 60%;
     height: 620px;
     background: #faf3ce;
@@ -958,24 +961,24 @@ section .main .main_image img{
     border-radius: 10px;
 }
 
-.order .order_main .order_form h2{
+.order .order_main .order_form h2 {
     text-align: center;
     margin-bottom: 40px;
     font-size: 30px;
 }
 
-.order .order_main .order_form .order_list{
+.order .order_main .order_form .order_list {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 0 20px;
     margin-bottom: 30px;
 }
 
-.order .order_main .order_form .order_list p{
+.order .order_main .order_form .order_list p {
     margin-bottom: 5px;
 }
 
-.order .order_main .order_form .order_list input{
+.order .order_main .order_form .order_list input {
     width: 350px;
     border: 2px solid #facc22;
     border-radius: 5px;
@@ -986,7 +989,7 @@ section .main .main_image img{
     margin-bottom: 15px;
 }
 
-.order .order_main .order_form .order_list textarea{
+.order .order_main .order_form .order_list textarea {
     width: 350px;
     height: 200px;
     border: 2px solid #facc22;
@@ -997,7 +1000,7 @@ section .main .main_image img{
     padding: 10px 5px;
 }
 
-.order .order_main .order_form .order_btn{
+.order .order_main .order_form .order_btn {
     padding: 10px 20px;
     border: 2px solid #facc22;
     text-decoration: none;
@@ -1005,7 +1008,7 @@ section .main .main_image img{
     background: #facc22;
 }
 
-.order .order_main .order_form .order_btn i{
+.order .order_main .order_form .order_btn i {
     margin-right: 8px;
 }
 
@@ -1019,404 +1022,454 @@ textarea {
     background-color: #f8f8f8;
     font-size: 16px;
     resize: none;
-  }
+}
 
 
 /*Footer*/
 
-footer{
+footer {
     width: 100%;
     padding: 30px 0 0 20px;
-    background: #eeeeee;
-    
+    background-image: url(/image/footer-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-footer .footer_main{
-    display: grid;
+footer .footer_main {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    margin-top: 4%;
-    
+    /* margin-top: 4%; */
+
 }
 
-footer .footer_main .footer_tag{
+footer .footer_main .footer_tag {
     text-align: center;
 }
 
-footer .footer_main :first-child{
+footer .footer_main :first-child {
     text-align: center;
     border-style: none;
 }
 
-footer .footer_main .footer_tag h2{
-    color: #000;
+footer .footer_main .footer_tag h2 {
+    color: #3a3a3a;
     margin-bottom: 25px;
     font-size: 30px;
 }
 
-footer .footer_main .footer_tag p{
+footer .footer_main .footer_tag p {
     margin: 10px 0;
 }
 
-footer .footer_main .footer_tag i{
+footer .footer_main .footer_tag i {
     margin: 0 5px;
     cursor: pointer;
 }
 
-footer .footer_main .footer_tag i:hover{
+footer .footer_main .footer_tag i:hover {
     color: #facc22;
 }
 
-footer .end{
+footer .end {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 15px 0;
 }
 
-footer .end span{
+footer .end span {
     color: #facc22;
     margin-left: 10px;
 }
 
-footer .end span:hover{
+footer .end span:hover {
     font-size: x-large;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 10px;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
     background: #facc22;
     border-radius: 30px;
 }
 
-.anim{
+.anim {
     opacity: 0;
     transform: translateY(40px);
     animation: moveup 0.5s linear forwards;
 }
 
-@keyframes moveup{
-    100%{
+@keyframes moveup {
+    100% {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
 
-@keyframes animate{
-    0%{
+@keyframes animate {
+    0% {
         transform: scale(1.1);
     }
-    50%{
+
+    50% {
         transform: scale(1);
     }
-    100%{
+
+    100% {
         transform: scale(1.1);
     }
 }
 
 @media (min-width : 820px) and (max-width: 1400px) {
-    body,html{
+
+    body,
+    html {
         width: 130%;
         /* overflow-x: hidden; */
     }
 
-    .about .about_main{
+    .about .about_main {
         margin-top: 10%;
     }
 
-    .banner{
+    .banner {
         margin-top: 15%;
         height: 60vh;
     }
-    .banner .banner_btn{
+
+    .banner .banner_btn {
         top: 0%;
     }
 
-    .offer{
+    .offer {
         margin-bottom: 5%;
     }
 
-    .blog{
+    .blog {
         margin-top: 10%;
     }
-    footer{
+
+    footer {
         margin-top: 5%;
     }
 }
 
 @media (min-width: 420px) and (max-width: 820px) {
 
-   html, body{
-        overflow-x:hidden;
+    html,
+    body {
+        overflow-x: hidden;
         width: 100vw;
     }
 
-    section nav{
+    section nav {
         width: 100vw;
     }
-    section nav ul{
+
+    section nav ul {
         display: flex;
         flex-direction: row;
         justify-content: end;
         margin-left: 0%;
     }
+
     section nav .logo {
         margin: 0%;
     }
 
-    .main{
+    .main {
         flex-direction: column;
     }
-    .main h1{
+
+    .main h1 {
         margin-top: 10%;
     }
-    section .main .main_image img{
+
+    section .main .main_image img {
         width: 70vw;
         margin-top: 20%;
     }
 
-    .about .about_main
-    {
+    .about .about_main {
         flex-direction: column;
         margin-top: 60%;
         /* align-items: normal; */
         /* width: 60%; */
     }
-    .about .about_main .about_image img{
+
+    .about .about_main .about_image img {
         width: 70vw;
     }
-    .about .about_main .about_text{
+
+    .about .about_main .about_text {
         width: 100vw;
         margin-left: 10%;
     }
-    .about .about_main .about_img{
+
+    .about .about_main .about_img {
         width: 100vw;
-        
+
     }
 
-    .menu{
+    .menu {
         width: 100vw;
     }
-    .menu_box{
+
+    .menu_box {
         overflow-x: scroll;
     }
 
-    .banner{
+    .banner {
         width: 100vw;
         height: 70vh;
-        margin-top: 30% ;
+        margin-top: 30%;
     }
 
-    .gallery{
+    .gallery {
         width: 100vw;
         margin-top: 15%;
     }
-    .gallery_box{
+
+    .gallery_box {
         overflow-x: scroll;
     }
 
-    .offer{
+    .offer {
         width: 100vw;
     }
-    .offer_box{
+
+    .offer_box {
         overflow-x: scroll;
     }
 
-    .team{
+    .team {
         width: 100vw;
     }
-    .team_box{
-        overflow-x:scroll ;
+
+    .team_box {
+        overflow-x: scroll;
     }
 
-    .blog
-    {
+    .blog {
         width: 100vw;
         margin-top: 35%;
     }
-    .blog_box{
+
+    .blog_box {
         overflow-x: scroll;
     }
-    
-    .order{
+
+    .order {
         width: 100vw;
-        
+
     }
-    .order .order_main{
+
+    .order .order_main {
         flex-direction: column;
         /* overflow-x: scroll; */
         /* width: 100vw; */
     }
+
     .order .order_main .order_form {
         width: 100vw;
 
         padding: 0%;
     }
-    .order .order_main .order_form .order_list{
+
+    .order .order_main .order_form .order_list {
         margin-left: 2%;
     }
 
-    footer{
+    footer {
         margin-top: 120%;
     }
 }
 
-@media (max-width : 425px){
-    html, body{
-        overflow-x:hidden;
+@media (max-width : 425px) {
+
+    html,
+    body {
+        overflow-x: hidden;
         width: 100%;
     }
 
-    section nav{
+    section nav {
         width: 100vw;
     }
-    section nav ul{
+
+    section nav ul {
         display: flex;
         flex-direction: row;
         justify-content: end;
         margin-left: 0%;
     }
-    section nav .logo img{
+
+    section nav .logo img {
         margin-left: 125%;
     }
-    section nav ul li{
+
+    section nav ul li {
         margin: 0%;
-    } 
+    }
 
 
-    .main{
+    .main {
         flex-direction: column;
         width: 90vw;
     }
-    .main h1{
+
+    .main h1 {
         margin-top: 10%;
     }
-    section .main .main_text p{
+
+    section .main .main_text p {
         width: 90vw;
     }
+
     section .main .main_image img {
         margin-top: 50%;
         width: 90vw;
     }
 
 
-    .about .about_main
-    {
+    .about .about_main {
         margin-top: 160%;
         flex-direction: column;
         /* align-items: normal; */
         width: 90vw;
     }
-    .about .about_main .about_image img{
+
+    .about .about_main .about_image img {
         width: 90vw;
     }
-    .about .about_main .about_text{
+
+    .about .about_main .about_text {
         width: 90vw;
         margin-left: 10%;
     }
-    .about .about_main .about_text p{
+
+    .about .about_main .about_text p {
         width: 90vw;
         margin: auto;
     }
-    .about .about_main .about_text .about_services{
+
+    .about .about_main .about_text .about_services {
         width: 90vw;
         display: flex;
         margin: auto;
     }
-    .about .about_main .about_img img{
+
+    .about .about_main .about_img img {
         width: 90vw;
-        margin-bottom:5% ;
+        margin-bottom: 5%;
     }
 
-    .menu{
+    .menu {
         width: 100vw;
     }
-    .menu_box{
+
+    .menu_box {
         overflow-x: scroll;
         margin: 5%;
     }
-    .menu .menu_box .menu_card{
+
+    .menu .menu_box .menu_card {
         width: 90vw;
         margin: auto;
     }
-    .menu .menu_box .menu_card .menu_img{
-        object-fit:cover;
+
+    .menu .menu_box .menu_card .menu_img {
+        object-fit: cover;
         width: 100%;
-        
+
     }
-    .menu .menu_box .menu_card .menu_text p{
-        
+
+    .menu .menu_box .menu_card .menu_text p {
+
         width: 100%;
     }
 
-    .banner{
+    .banner {
         width: 90vw;
         margin: auto;
-        margin-bottom : 10% ;
+        margin-bottom: 10%;
         margin-top: 50%;
     }
-    .banner h1{
+
+    .banner h1 {
         font-size: 10vw;
     }
 
-    .gallery{
+    .gallery {
         width: 90vw;
         margin: auto;
     }
-    .gallery_box{
+
+    .gallery_box {
         overflow-x: scroll;
     }
-    .gallery .gallery_box .gallery_image{
+
+    .gallery .gallery_box .gallery_image {
         width: 80vw;
     }
 
-    .offer{
+    .offer {
         width: 90vw;
         margin: auto;
     }
-    .offer .offer_box{
+
+    .offer .offer_box {
         overflow-x: scroll;
     }
 
-    .offer .offer_box .offer_card_1 .offer_tag{
+    /* .offer .offer_box .offer_card_1 .offer_tag {} */
 
-    }
-
-    .team{
+    .team {
         width: 100vw;
     }
-    .team_box{
-        overflow-x:scroll ;
+
+    .team_box {
+        overflow-x: scroll;
     }
 
-    .blog
-    {
+    .blog {
         width: 90vw;
         margin: auto;
         margin-top: 30%;
     }
-    .blog_box{
+
+    .blog_box {
         overflow-x: scroll;
     }
-    .blog .blog_box .blog_card{
+
+    .blog .blog_box .blog_card {
         width: 85vw;
     }
-    .blog .blog_box .blog_card .blog_img{
+
+    .blog .blog_box .blog_card .blog_img {
         width: 85vw;
     }
-    
-    .order{
+
+    .order {
         width: 90vw;
     }
-    .order .order_main{
+
+    .order .order_main {
         flex-direction: column;
     }
-    .order .order_main .order_img img{
+
+    .order .order_main .order_img img {
         width: 80vw;
     }
+
     .order .order_main .order_form {
         width: 90vw;
         margin: auto;
@@ -1424,32 +1477,37 @@ footer .end span:hover{
         overflow-x: scroll;
         padding: 0%;
     }
-    .order .order_main .order_form .order_list{
+
+    .order .order_main .order_form .order_list {
         margin-left: 4%;
         width: 200%;
     }
 
-    footer{
+    footer {
         margin-top: 80vh;
         width: 100vw;
         padding: 0%;
     }
-    footer .footer_main{
+
+    footer .footer_main {
         width: 100vw;
     }
-    footer .footer_tag{
+
+    footer .footer_tag {
         width: 20vw;
-        
+
     }
-    footer .footer_main .footer_tag h2{
+
+    footer .footer_main .footer_tag h2 {
         color: #000;
         font-size: 130%;
     }
-    footer .footer_main .footer_tag p{
-        margin:10px 0;
+
+    footer .footer_main .footer_tag p {
+        margin: 10px 0;
         font-size: 100%;
         width: 80%;
-        word-wrap:break-word;
-        
+        word-wrap: break-word;
+
     }
 }
