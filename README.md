@@ -135,19 +135,11 @@ Alternatively, you can run the application without Docker:
 # Install Dependencies
 npm install
 
-# Navigate to the src/routes directory
-cd src/routes
 
-# Run dish-server.js
-node dish-server.js
-```
-Open a new terminal window/tab
-
-```
 # Run user-server.js
 node user-server.js
-
 ```
+
 Visit the application: (http://localhost:4000)
 
 The development environment should now be set up. Additional information on the different application component can be found under README.md file. Happy hacking! 👾
