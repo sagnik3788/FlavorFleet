@@ -1019,6 +1019,8 @@ footer {
 	align-content: center;
 	flex-wrap: wrap;
 	margin: 0 auto;
+	margin-top: 60px;
+	margin-bottom: 30px;
 }
 .img {
 	display: flex;
@@ -1028,9 +1030,13 @@ footer {
 }
 
 .img img {
-	width: 500px;
+	width: 600px;
 	height: auto;
 	margin: 10px 0;
+}
+.img img:hover {
+	transform: scale(1.1);
+	transition: 0.5s ease;
 }
 .services {
 	display: flex;
@@ -1064,20 +1070,89 @@ footer {
 	flex-direction: column;
 }
 .footer_head {
+	font-size: 33px;
+	background-color: transparent;
+	padding: 7px 10px;
+	border-radius: 20px;
+	backdrop-filter: blur(10px);
+	text-decoration: underline;
+}
+.contact {
+	width: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	flex-direction: column;
+}
+.icons {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 10px auto;
 	font-size: 28px;
 }
-
+.social {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	flex-direction: column;
+}
+.social_links {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 10px auto;
+	font-size: 40px;
+	width: 50%;
+}
+.social_links .fa-facebook {
+	color: #3b5998;
+}
+.social_links .fa-facebook:hover {
+	transition: 0.3s ease;
+	transform: scale(1.5);
+}
+.social_links .fa-twitter {
+	color: #00aced;
+}
+.social_links .fa-twitter:hover {
+	transition: 0.3s ease;
+	transform: scale(1.5);
+}
+.social_links .fa-github {
+	color: #000;
+}
+.social_links .fa-github:hover {
+	transition: 0.3s ease;
+	transform: scale(1.5);
+}
+.icons a {
+	color: black;
+}
+.icons a:hover {
+	color: #588fe8;
+	transition: 0.3s;
+}
 .flags {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	margin: 0 auto;
+	margin-top: 20px;
+}
+.flags:hover {
+	transform: scale(1.5);
+	transition: 0.5s ease;
 }
 .flags img {
 	width: 45px;
 	height: 30px;
 	margin: 8px;
 }
+
 ::-webkit-scrollbar {
 	width: 10px;
 }
