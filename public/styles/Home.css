@@ -1540,27 +1540,29 @@ footer {
 		width: 100vw;
 		padding: 0%;
 	}
-
-	/* 
-    footer .footer_main {
-        width: 100vw;
-    }
-
-    footer .footer_tag {
-        width: 20vw;
-
-    }
-
-    footer .footer_main .footer_tag h2 {
-        color: #000;
-        font-size: 130%;
-    }
-
-    footer .footer_main .footer_tag p {
-        margin: 10px 0;
-        font-size: 100%;
-        width: 80%;
-        word-wrap: break-word;
-
-    } */
+	.footer_main {
+		width: 100%;
+		flex-direction: column;
+	}
+	.img img {
+		width: 100%;
+	}
+	.services div {
+		flex-direction: column;
+		align-items: center;
+	}
+	.contact {
+		width: 100%;
+	}
+	.icons {
+		flex-direction: column;
+	}
+	.social_links {
+		flex-direction: column;
+		width: 100%;
+	}
+	.flags img {
+		width: 30px;
+		height: 20px;
+	}
 }
