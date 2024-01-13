@@ -1032,7 +1032,7 @@ footer {
 .img img {
 	height: auto;
 	margin: 10px 0;
-	width: 650px;
+	width: 500px;
 }
 .img img:hover {
 	transform: scale(1.1);
@@ -1047,7 +1047,7 @@ footer {
 	background-color: rgba(255, 255, 255, 0.303);
 	backdrop-filter: blur(10px);
 	border-radius: 20px;
-	width: 300px;
+	width: 250px;
 }
 .services div {
 	width: 100%;
@@ -1202,8 +1202,8 @@ footer {
 @media (min-width: 820px) and (max-width: 1400px) {
 	body,
 	html {
-		width: 130%;
-		/* overflow-x: hidden; */
+		width: 100%;
+		overflow-x: hidden;
 	}
 
 	.about .about_main {
@@ -1358,9 +1358,9 @@ footer {
 		margin-left: 2%;
 	}
 
-	footer {
+	/* footer {
 		margin-top: 120%;
-	}
+	} */
 	.img img {
 		width: 500px;
 	}
@@ -1558,9 +1558,8 @@ footer {
 	}
 
 	footer {
-		margin-top: 80vh;
+		/* margin-top: 80vh; */
 		width: 100vw;
-		padding: 0%;
 	}
 	.footer_main {
 		width: 100%;
