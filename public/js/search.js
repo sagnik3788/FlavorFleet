@@ -47,11 +47,25 @@ document.addEventListener('DOMContentLoaded', function () {
                     <img src="${meal.strMealThumb}" alt="${meal.strMeal}" class="meal-image">
                     <p class="meal-name"> ${meal.strMeal} </p>
                     `;
+
+                // Create a paragraph element for the meal name
                 const mealName = document.createElement('p');
-                // mealName.textContent = meal.strMeal;
+                mealName.textContent = meal.strMeal;
+                mealName.className = 'meal-name'; // Add a class for styling if necessary
+
+                // Append image container and meal name to the result item
                 resultItem.appendChild(imageContainer);
                 resultItem.appendChild(mealName);
+
+                // Append the result item to the search results container
                 searchResults.appendChild(resultItem);
+
+
+                /* const mealName = document.createElement('p');
+                 // mealName.textContent = meal.strMeal;
+                 resultItem.appendChild(imageContainer);
+                 resultItem.appendChild(mealName);
+                 searchResults.appendChild(resultItem);*/
             });
         } catch (error) {
             console.log('An error occurred while fetching data:', error);

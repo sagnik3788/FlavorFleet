@@ -55,6 +55,13 @@ body {
     color: #facc22;
 }
 
+.meal-name {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+
 .button {
     background-color:#facc22; /* Green */
     border: none;
