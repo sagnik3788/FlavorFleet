@@ -35,30 +35,53 @@ document.addEventListener('DOMContentLoaded', function () {
             // });
 
             meals.forEach(meal => {
-                const resultItem = document.createElement('a')
-                resultItem.setAttribute('data-food-id', meal.idMeal);
-                resultItem.href = `/templates/dish.html?id=${meal.idMeal}`;
-                // resultItem.href = '/templates/dish?id=' + meal.idMeal;
-                resultItem.className = 'result-item';
-                // Create a separate div for the image
-                const imageContainer = document.createElement('div');
-                imageContainer.className = 'image-container';
-                imageContainer.innerHTML = `
-                    <img src="${meal.strMealThumb}" alt="${meal.strMeal}" class="meal-image">
-                    <p class="meal-name"> ${meal.strMeal} </p>
+
+                meals.forEach(meal => {
+                    const resultItem = document.createElement('a');
+                    resultItem.setAttribute('data-food-id', meal.idMeal);
+                    resultItem.href = `/templates/dish.html?id=${meal.idMeal}`;
+                    resultItem.className = 'result-item';
+                
+                    // Create a separate div for the image and include the meal name within this div
+                    const imageContainer = document.createElement('div');
+                    imageContainer.className = 'image-container';
+                    imageContainer.innerHTML = `
+                        <img src="${meal.strMealThumb}" alt="${meal.strMeal}" class="meal-image">
+                        <p class="meal-name">${meal.strMeal}</p>
                     `;
+                
+                    // Append image container (which now includes the meal name) to the result item
+                    resultItem.appendChild(imageContainer);
+                
+                    // Append the result item to the search results container
+                    searchResults.appendChild(resultItem);
+                });
 
-                // Create a paragraph element for the meal name
-                const mealName = document.createElement('p');
-                mealName.textContent = meal.strMeal;
-                mealName.className = 'meal-name'; // Add a class for styling if necessary
+                
+                // const resultItem = document.createElement('a')
+                // resultItem.setAttribute('data-food-id', meal.idMeal);
+                // resultItem.href = `/templates/dish.html?id=${meal.idMeal}`;
+                // // resultItem.href = '/templates/dish?id=' + meal.idMeal;
+                // resultItem.className = 'result-item';
+                // // Create a separate div for the image
+                // const imageContainer = document.createElement('div');
+                // imageContainer.className = 'image-container';
+                // imageContainer.innerHTML = `
+                //     <img src="${meal.strMealThumb}" alt="${meal.strMeal}" class="meal-image">
+                //     <p class="meal-name"> ${meal.strMeal} </p>
+                //     `;
 
-                // Append image container and meal name to the result item
-                resultItem.appendChild(imageContainer);
-                resultItem.appendChild(mealName);
+                // // Create a paragraph element for the meal name
+                // const mealName = document.createElement('p');
+                // mealName.textContent = meal.strMeal;
+                // mealName.className = 'meal-name'; // Add a class for styling if necessary
 
-                // Append the result item to the search results container
-                searchResults.appendChild(resultItem);
+                // // Append image container and meal name to the result item
+                // resultItem.appendChild(imageContainer);
+                // resultItem.appendChild(mealName);
+
+                // // Append the result item to the search results container
+                // searchResults.appendChild(resultItem);
 
 
                 /* const mealName = document.createElement('p');
