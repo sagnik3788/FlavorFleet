@@ -11,89 +11,39 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     async function search(query) {
-
         try {
-            // const response = await fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${query}`);
-
             const response = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${query}`);
             const data = await response.json();
-            const limit = 3;
+            const limit = 3; // Limit the number of displayed meals to 3
             const meals = data.meals.slice(0, limit);
-
-            console.log(meals);
+    
             searchResults.innerHTML = '';
             if (data.meals === null) {
                 searchResults.innerHTML = '<p>No results found.</p>';
                 return;
             }
-
-            // meals.forEach(meal => {
-            // const resultItem = document.createElement('div');
-            // resultItem.className = 'result-item'; // Add this line to set the class
-            // resultItem.innerHTML = `<p>${meal.strMeal}</p><img src="${meal.strMealThumb}" alt="${meal.strMeal}" class="meal-image">`;
-            // searchResults.appendChild(resultItem);
-            // });
-
+    
             meals.forEach(meal => {
-
-                meals.forEach(meal => {
-                    const resultItem = document.createElement('a');
-                    resultItem.setAttribute('data-food-id', meal.idMeal);
-                    resultItem.href = `/templates/dish.html?id=${meal.idMeal}`;
-                    resultItem.className = 'result-item';
-                
-                    // Create a separate div for the image and include the meal name within this div
-                    const imageContainer = document.createElement('div');
-                    imageContainer.className = 'image-container';
-                    imageContainer.innerHTML = `
-                        <img src="${meal.strMealThumb}" alt="${meal.strMeal}" class="meal-image">
-                        <p class="meal-name">${meal.strMeal}</p>
-                    `;
-                
-                    // Append image container (which now includes the meal name) to the result item
-                    resultItem.appendChild(imageContainer);
-                
-                    // Append the result item to the search results container
-                    searchResults.appendChild(resultItem);
-                });
-
-                
-                // const resultItem = document.createElement('a')
-                // resultItem.setAttribute('data-food-id', meal.idMeal);
-                // resultItem.href = `/templates/dish.html?id=${meal.idMeal}`;
-                // // resultItem.href = '/templates/dish?id=' + meal.idMeal;
-                // resultItem.className = 'result-item';
-                // // Create a separate div for the image
-                // const imageContainer = document.createElement('div');
-                // imageContainer.className = 'image-container';
-                // imageContainer.innerHTML = `
-                //     <img src="${meal.strMealThumb}" alt="${meal.strMeal}" class="meal-image">
-                //     <p class="meal-name"> ${meal.strMeal} </p>
-                //     `;
-
-                // // Create a paragraph element for the meal name
-                // const mealName = document.createElement('p');
-                // mealName.textContent = meal.strMeal;
-                // mealName.className = 'meal-name'; // Add a class for styling if necessary
-
-                // // Append image container and meal name to the result item
-                // resultItem.appendChild(imageContainer);
-                // resultItem.appendChild(mealName);
-
-                // // Append the result item to the search results container
-                // searchResults.appendChild(resultItem);
-
-
-                /* const mealName = document.createElement('p');
-                 // mealName.textContent = meal.strMeal;
-                 resultItem.appendChild(imageContainer);
-                 resultItem.appendChild(mealName);
-                 searchResults.appendChild(resultItem);*/
+                const resultItem = document.createElement('a');
+                resultItem.setAttribute('data-food-id', meal.idMeal);
+                resultItem.href = `/templates/dish.html?id=${meal.idMeal}`;
+                resultItem.className = 'result-item';
+    
+                const imageContainer = document.createElement('div');
+                imageContainer.className = 'image-container';
+                imageContainer.innerHTML = `
+                    <img src="${meal.strMealThumb}" alt="${meal.strMeal}" class="meal-image">
+                    <p class="meal-name">${meal.strMeal}</p>
+                `; // Meal name is placed below the image
+    
+                resultItem.appendChild(imageContainer);
+                searchResults.appendChild(resultItem);
             });
         } catch (error) {
             console.log('An error occurred while fetching data:', error);
         }
     }
+    
 
     searchInput.addEventListener('keydown', function (event) {
         if (event.keyCode === 13) {
