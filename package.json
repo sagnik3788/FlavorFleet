@@ -22,7 +22,7 @@
     "express-session": "^1.18.0",
     "fs": "^0.0.1-security",
     "jsonwebtoken": "^9.0.2",
-    "mongodb": "^5.8.1",
+    "mongodb": "^6.4.0",
     "mongoose": "^8.1.2",
     "node-fetch": "^2.6.1",
     "nodemon": "^3.0.3",
