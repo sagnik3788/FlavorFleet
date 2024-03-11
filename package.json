@@ -23,7 +23,7 @@
     "fs": "^0.0.1-security",
     "jsonwebtoken": "^9.0.2",
     "mongodb": "^5.8.1",
-    "mongoose": "^8.1.2",
+    "mongoose": "^8.2.1",
     "node-fetch": "^2.6.1",
     "nodemon": "^3.0.3",
     "path": "^0.12.7",
