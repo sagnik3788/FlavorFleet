@@ -158,8 +158,8 @@ function register() {
 <script>
     const firstNameInput = document.getElementById('firstName');
     const lastNameInput = document.getElementById('lastName');
-    const registerEmailInput = document.getElementById('registerEmail');
-    const registerPasswordInput = document.getElementById('registerPassword');
+    const registerEmailInput = document.getElementById('email');
+    const registerPasswordInput = document.getElementById('password');
 
     // Function to clear input fields
     function clearInputFields() {
@@ -186,7 +186,7 @@ function register() {
     console.log('User data:', userData); 
 
     try {
-        const response = await fetch('http://127.0.0.1:4001/register', {
+        const response = await fetch('http://localhost:4001/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
